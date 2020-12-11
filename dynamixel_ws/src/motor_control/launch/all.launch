@@ -9,8 +9,8 @@
 
     <!-- node -->
     <group ns="nodes">
-        <node name ="dynamixel" pkg="deliv_robot" type="dynamixel_command.py" output="screen"/>
-        <node name ="serial_translator" pkg="deliv_robot" type="serial_translator.py" />
+        <node name ="dynamixel" pkg="motor_control" type="dynamixel_command.py" output="screen"/>
+        <node name ="serial_translator" pkg="motor_control" type="serial_translator.py" />
     </group>
 
 </launch>

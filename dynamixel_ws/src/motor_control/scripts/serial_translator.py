@@ -3,7 +3,6 @@
 import rospy
 import sys
 from std_msgs.msg import Float64, Bool,String
-from deliv_robot.msg import Joystick_cmd
 
 
 class serial_translator:
