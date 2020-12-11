@@ -5,7 +5,7 @@ s5_g7_briand_guy_kahan_martinez
 Démarrage
 
 Essai commit Nico
-Commit
+Essai commit Paul
 
 
 ### Exemple de planning type
@@ -13,5 +13,4 @@ Commit
 
 ### ACHATS SUPPLEMENTAIRES NECESSAIRES A LA BONNE CONDUITE DU PROJET RESPECTIVE A CHACUN(E)
 => Jérémie donne à Paul un raspberry Pi avec la caméra associée
-
 => Nicolas apporte sa malette d'électronique pour savoir si des composants peuvent servir
