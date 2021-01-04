@@ -15,8 +15,11 @@ Essai commit Paul
 => Jérémie donne à Paul un raspberry Pi avec la caméra associée
 => Nicolas apporte sa malette d'électronique pour savoir si des composants peuvent servir
 
-Lundi 04 Janvier 2021 matin :
+Séance 1 du Lundi 04 Janvier 2021 matin :
 - Jérémie : documentation IHM Matlab
 - Nicolas : Recherche documentation/codes capteurs IR/US + se replonger dans les codes servomoteur dynamixel AX12 du projet proto
 - Paul : Documentation et entrainement 
 - Estelle: installation ubuntu mate + ROS sur raspberry, verifier le bon foncitonnement
+
+Séance 2 du Lundi 04 Janvier 2021 après-midi :
+- Jérémie : tests IHM Matlab et documentation liens Simulink
