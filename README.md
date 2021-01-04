@@ -19,7 +19,8 @@ Séance 1 du Lundi 04 Janvier 2021 matin :
 - Jérémie : documentation et tests IHM Matlab
 - Nicolas : Recherche documentation/codes capteurs IR/US + se replonger dans les codes servomoteur dynamixel AX12 du projet proto
 - Paul : Documentation et entrainement 
-- Estelle: installation ubuntu mate + ROS sur raspberry, verifier le bon foncitonnement
+- Estelle : Installation ubuntu mate + ROS sur raspberry, verifier le bon fonctionnement --> difficultés rencontrées avec la version 20, essai avec rasperry pi OS (debian)
 
 Séance 2 du Lundi 04 Janvier 2021 après-midi :
 - Jérémie : documentation liens Simulink-IHM Matlab et généralités sur les Digital Twins
+- Estelle : Installation & tests ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img 
