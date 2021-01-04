@@ -22,5 +22,5 @@ Séance 1 du Lundi 04 Janvier 2021 matin :
 - Estelle : Installation ubuntu mate + ROS sur raspberry, verifier le bon fonctionnement --> difficultés rencontrées avec la version 20, essai avec rasperry pi OS (debian)
 
 Séance 2 du Lundi 04 Janvier 2021 après-midi :
-- Jérémie : documentation liens Simulink-IHM Matlab et généralités sur les Digital Twins
+- Jérémie : documentation liens Simulink-IHM Matlab et généralités sur les Digital Twins, découverte des toolboxes associées
 - Estelle : Installation & tests ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img 
