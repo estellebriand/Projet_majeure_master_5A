@@ -19,3 +19,4 @@ Lundi 04 Janvier 2021 matin :
 - Jérémie : documentation IHM Matlab
 - Nicolas : Recherche documentation/codes capteurs IR/US + se replonger dans les codes servomoteur dynamixel AX12 du projet proto
 - Paul : Documentation et entrainement 
+- Estelle: installation ubuntu mate + ROS sur raspberry, verifier le bon foncitonnement
