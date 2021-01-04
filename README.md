@@ -16,10 +16,10 @@ Essai commit Paul
 => Nicolas apporte sa malette d'électronique pour savoir si des composants peuvent servir
 
 Séance 1 du Lundi 04 Janvier 2021 matin :
-- Jérémie : documentation IHM Matlab
+- Jérémie : documentation et tests IHM Matlab
 - Nicolas : Recherche documentation/codes capteurs IR/US + se replonger dans les codes servomoteur dynamixel AX12 du projet proto
 - Paul : Documentation et entrainement 
 - Estelle: installation ubuntu mate + ROS sur raspberry, verifier le bon foncitonnement
 
 Séance 2 du Lundi 04 Janvier 2021 après-midi :
-- Jérémie : tests IHM Matlab et documentation liens Simulink
+- Jérémie : documentation liens Simulink-IHM Matlab et généralités sur les Digital Twins
