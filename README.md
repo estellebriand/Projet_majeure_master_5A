@@ -17,3 +17,4 @@ Essai commit Paul
 
 Lundi 04 Janvier 2021 matin :
 - Jérémie : documentation IHM Matlab
+- Nicolas : Recherche documentation/codes capteurs IR/US + se replonger dans les codes servomoteur dynamixel AX12 du projet proto
