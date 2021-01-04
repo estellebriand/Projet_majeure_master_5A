@@ -14,3 +14,6 @@ Essai commit Paul
 ### ACHATS SUPPLEMENTAIRES NECESSAIRES A LA BONNE CONDUITE DU PROJET RESPECTIVE A CHACUN(E)
 => Jérémie donne à Paul un raspberry Pi avec la caméra associée
 => Nicolas apporte sa malette d'électronique pour savoir si des composants peuvent servir
+
+Lundi 04 Janvier 2021 matin :
+- Jérémie : documentation IHM Matlab
