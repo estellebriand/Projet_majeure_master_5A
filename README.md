@@ -8,3 +8,5 @@ Code Arduino capteur ultrason DONE
 Code RaspberryPi capteur ultrason DONE
 Recherche informations pour connecter le Lidar au raspberryPi
 
+https://medium.com/robotics-with-ros/installing-the-rplidar-lidar-sensor-on-the-raspberry-pi-32047cde9588
+
