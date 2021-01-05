@@ -1,6 +1,6 @@
 /*
 Mesure de distance à l'aide d'un capteur HC-SR04 et d'un Arduino
-Projets Robotique fin de majeure robotique CPE Lyon - Nicolas Guy 
+Projets Robotique fin de majeure CPE Lyon - Nicolas Guy 
 Circuit - repérage des broches
 - VCC avec la broche 5V de l'Arduino
 - GND avec la broche GND de l'Arduino
