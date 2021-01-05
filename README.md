@@ -26,12 +26,15 @@ Lundi 04 Janvier 2021 matin :
 -> work on the ROS, Integration of communication
 
 ## Work in progress:
-- [x] Dynamixel :  dans le workspace ROS /projet_ws  pour le controle du dynamixel en position
-- [x] ROS serial : dans le workspace ROS /projet_ws pour le la liaison serial entre arduino uno et raspberry
+- [ ] Dynamixel :  dans le workspace ROS /projet_ws  pour le controle du dynamixel en position
+- [ ] ROS serial : dans le workspace ROS /projet_ws pour le la liaison serial entre arduino uno et raspberry
 - [ ] ROS ethernet :  on veut une connection ethernet entre la raspberry et matlab
-- [ ] Installation OS: Ubuntu-mate 18.04
-- [ ] Installation ROS sur Ubuntu-mate : melodic de preference
+- [x] Installation OS: Ubuntu-mate 18.04
+- [x] Installation ROS sur Ubuntu-mate : melodic de preference
 
+--> rapsberry pi prête : 3
+## How to
+- flash_sd_card --> raspberry_pi/flash_sd_card.md
 ## Researchs and links
 
 https://yoraish.com/2020/01/23/a-full-autonomous-stack-a-tutorial-ros-raspberry-pi-arduino-slam/
