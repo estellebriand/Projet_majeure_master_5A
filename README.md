@@ -27,3 +27,4 @@ Séance 2 du Lundi 04 Janvier 2021 après-midi :
 
 Séance 3 du Mardi 05 Janvier 2021 matin :
 - Jérémie : Mise au point objectifs du projet, matériel et documentation Toolboxes Matlab
+- Paul : Debut entrainement à la reconnaissance d'objet, canette/couleur & test materiel
