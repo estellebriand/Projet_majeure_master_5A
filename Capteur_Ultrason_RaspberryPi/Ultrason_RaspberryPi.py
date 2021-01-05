@@ -1,6 +1,12 @@
 import RPi.GPIO as GPIO
 import time
 
+#source code: https://raspberry-lab.fr/Composants/Mesure-de-distance-avec-HC-SR04-Raspberry-Francais/
+#Update: Nicolas Guy
+#Date: 04/01/2021
+#Code to detect the distance with the HC-SR04 sensor and a RaspberryPi
+#WorldSkills robot project 
+
 GPIO.setmode(GPIO.BCM)
 
 print ("+-----------------------------------------------------------+")
