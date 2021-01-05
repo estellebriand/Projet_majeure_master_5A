@@ -12,4 +12,6 @@ https://medium.com/robotics-with-ros/installing-the-rplidar-lidar-sensor-on-the-
 
 https://www.youtube.com/watch?v=Qrtz0a7HaQ4
 
+https://www.youtube.com/watch?v=qNdcXUEF7KU&ab_channel=RoboticsWeekends
+
 
