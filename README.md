@@ -24,3 +24,6 @@ Séance 1 du Lundi 04 Janvier 2021 matin :
 Séance 2 du Lundi 04 Janvier 2021 après-midi :
 - Jérémie : documentation liens Simulink-IHM Matlab et généralités sur les Digital Twins, découverte des toolboxes associées
 - Estelle : Installation & tests ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img 
+
+Séance 3 du Mardi 05 Janvier 2021 matin :
+- Jérémie : Mise au point objectifs du projet, matériel et documentation Toolboxes Matlab
