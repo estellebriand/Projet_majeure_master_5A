@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/opt/ros/melodic/lib'
+export PKG_CONFIG_PATH='/opt/ros/melodic/lib/pkgconfig'
 export PWD='/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH='/opt/ros/melodic/lib/python2.7/dist-packages'

@@ -1,0 +1,8 @@
+prefix=/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/devel
+
+Name: hector_imu_tools
+Description: Description of hector_imu_tools
+Version: 0.5.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs nav_msgs roscpp sensor_msgs tf

@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/ros-ubuntu/Bureau/s5_g7_
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3a603/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3a603.dir/build.make CMakeFiles/cmTC_3a603.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_38d71/fast"
+/usr/bin/make -f CMakeFiles/cmTC_38d71.dir/build.make CMakeFiles/cmTC_38d71.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3a603.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3a603.dir/testCCompiler.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_3a603
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a603.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3a603.dir/testCCompiler.c.o  -o cmTC_3a603 
+Building C object CMakeFiles/cmTC_38d71.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_38d71.dir/testCCompiler.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_38d71
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38d71.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_38d71.dir/testCCompiler.c.o  -o cmTC_38d71 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f9000/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f9000.dir/build.make CMakeFiles/cmTC_f9000.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7a27e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7a27e.dir/build.make CMakeFiles/cmTC_7a27e.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f9000.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_f9000.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_f9000
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9000.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f9000.dir/CMakeCCompilerABI.c.o  -o cmTC_f9000 
+Building C object CMakeFiles/cmTC_7a27e.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7a27e.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_7a27e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a27e.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_7a27e.dir/CMakeCCompilerABI.c.o  -o cmTC_7a27e 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper
@@ -59,9 +59,9 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/
 LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f9000' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
- /usr/lib/gcc/arm-linux-gnueabihf/7/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9HrK4T.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -pie -z now -z relro -o cmTC_f9000 /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o -L/usr/lib/gcc/arm-linux-gnueabihf/7 -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../.. CMakeFiles/cmTC_f9000.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/7/crtendS.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f9000' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7a27e' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ /usr/lib/gcc/arm-linux-gnueabihf/7/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccp4Ql3j.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -pie -z now -z relro -o cmTC_7a27e /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o -L/usr/lib/gcc/arm-linux-gnueabihf/7 -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../.. CMakeFiles/cmTC_7a27e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/7/crtendS.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7a27e' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -69,14 +69,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f9000/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f9000.dir/build.make CMakeFiles/cmTC_f9000.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_7a27e/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_7a27e.dir/build.make CMakeFiles/cmTC_7a27e.dir/build]
   ignore line: [make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_f9000.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_f9000.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_f9000]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9000.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f9000.dir/CMakeCCompilerABI.c.o  -o cmTC_f9000 ]
+  ignore line: [Building C object CMakeFiles/cmTC_7a27e.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_7a27e.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_7a27e]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a27e.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_7a27e.dir/CMakeCCompilerABI.c.o  -o cmTC_7a27e ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f9000' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
-  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/7/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9HrK4T.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -pie -z now -z relro -o cmTC_f9000 /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o -L/usr/lib/gcc/arm-linux-gnueabihf/7 -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../.. CMakeFiles/cmTC_f9000.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/7/crtendS.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7a27e' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/7/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccp4Ql3j.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -pie -z now -z relro -o cmTC_7a27e /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o -L/usr/lib/gcc/arm-linux-gnueabihf/7 -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../.. CMakeFiles/cmTC_7a27e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/7/crtendS.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crtn.o]
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc9HrK4T.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccp4Ql3j.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -112,7 +112,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f9000] ==> ignore
+    arg [cmTC_7a27e] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o] ==> ignore
@@ -124,7 +124,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/arm-linux-gnueabihf/7/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/7/../../..]
-    arg [CMakeFiles/cmTC_f9000.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_7a27e.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -156,14 +156,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5660b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5660b.dir/build.make CMakeFiles/cmTC_5660b.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f7494/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7494.dir/build.make CMakeFiles/cmTC_f7494.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5660b.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_5660b.dir/feature_tests.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_5660b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5660b.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5660b.dir/feature_tests.c.o  -o cmTC_5660b 
+Building C object CMakeFiles/cmTC_f7494.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_f7494.dir/feature_tests.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f7494
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7494.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f7494.dir/feature_tests.c.o  -o cmTC_f7494 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -176,14 +176,14 @@ make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_marti
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bf016/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bf016.dir/build.make CMakeFiles/cmTC_bf016.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_9049d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9049d.dir/build.make CMakeFiles/cmTC_9049d.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bf016.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_bf016.dir/feature_tests.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_bf016
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf016.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bf016.dir/feature_tests.c.o  -o cmTC_bf016 
+Building C object CMakeFiles/cmTC_9049d.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_9049d.dir/feature_tests.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_9049d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9049d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9049d.dir/feature_tests.c.o  -o cmTC_9049d 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -196,14 +196,14 @@ make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_marti
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7d80d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7d80d.dir/build.make CMakeFiles/cmTC_7d80d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_86b39/fast"
+/usr/bin/make -f CMakeFiles/cmTC_86b39.dir/build.make CMakeFiles/cmTC_86b39.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7d80d.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_7d80d.dir/feature_tests.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7d80d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d80d.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7d80d.dir/feature_tests.c.o  -o cmTC_7d80d 
+Building C object CMakeFiles/cmTC_86b39.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_86b39.dir/feature_tests.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_86b39
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86b39.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_86b39.dir/feature_tests.c.o  -o cmTC_86b39 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -214,28 +214,28 @@ make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_marti
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_504c6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_504c6.dir/build.make CMakeFiles/cmTC_504c6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_813e0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_813e0.dir/build.make CMakeFiles/cmTC_813e0.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_504c6.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_504c6.dir/testCXXCompiler.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_504c6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_504c6.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_504c6.dir/testCXXCompiler.cxx.o  -o cmTC_504c6 
+Building CXX object CMakeFiles/cmTC_813e0.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_813e0.dir/testCXXCompiler.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_813e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_813e0.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_813e0.dir/testCXXCompiler.cxx.o  -o cmTC_813e0 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c7474/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c7474.dir/build.make CMakeFiles/cmTC_c7474.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e121a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e121a.dir/build.make CMakeFiles/cmTC_e121a.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c7474.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_c7474.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_c7474
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7474.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_c7474.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c7474 
+Building CXX object CMakeFiles/cmTC_e121a.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_e121a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_e121a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e121a.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_e121a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e121a 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper
@@ -245,9 +245,9 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/
 LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c7474' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
- /usr/lib/gcc/arm-linux-gnueabihf/7/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXNEhdd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -pie -z now -z relro -o cmTC_c7474 /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o -L/usr/lib/gcc/arm-linux-gnueabihf/7 -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../.. CMakeFiles/cmTC_c7474.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/7/crtendS.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c7474' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e121a' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ /usr/lib/gcc/arm-linux-gnueabihf/7/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cczH1Iep.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -pie -z now -z relro -o cmTC_e121a /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o -L/usr/lib/gcc/arm-linux-gnueabihf/7 -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../.. CMakeFiles/cmTC_e121a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/7/crtendS.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e121a' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -255,14 +255,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c7474/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c7474.dir/build.make CMakeFiles/cmTC_c7474.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_e121a/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_e121a.dir/build.make CMakeFiles/cmTC_e121a.dir/build]
   ignore line: [make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_c7474.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_c7474.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_c7474]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7474.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_c7474.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c7474 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_e121a.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_e121a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_e121a]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e121a.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_e121a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e121a ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper]
@@ -272,13 +272,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/7/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c7474' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
-  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/7/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXNEhdd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -pie -z now -z relro -o cmTC_c7474 /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o -L/usr/lib/gcc/arm-linux-gnueabihf/7 -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../.. CMakeFiles/cmTC_c7474.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/7/crtendS.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e121a' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/7/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cczH1Iep.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -pie -z now -z relro -o cmTC_e121a /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o -L/usr/lib/gcc/arm-linux-gnueabihf/7 -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/7/../../.. CMakeFiles/cmTC_e121a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/7/crtendS.o /usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crtn.o]
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccXNEhdd.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cczH1Iep.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -298,7 +298,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_c7474] ==> ignore
+    arg [cmTC_e121a] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/../../../arm-linux-gnueabihf/crti.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/7/crtbeginS.o] ==> ignore
@@ -310,7 +310,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/arm-linux-gnueabihf/7/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/7/../../..]
-    arg [CMakeFiles/cmTC_c7474.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_e121a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -338,14 +338,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8e0f7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8e0f7.dir/build.make CMakeFiles/cmTC_8e0f7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8ca1d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ca1d.dir/build.make CMakeFiles/cmTC_8ca1d.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8e0f7.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_8e0f7.dir/feature_tests.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8e0f7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e0f7.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8e0f7.dir/feature_tests.cxx.o  -o cmTC_8e0f7 
+Building CXX object CMakeFiles/cmTC_8ca1d.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_8ca1d.dir/feature_tests.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8ca1d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca1d.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8ca1d.dir/feature_tests.cxx.o  -o cmTC_8ca1d 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -411,14 +411,14 @@ make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_marti
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b4e4c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b4e4c.dir/build.make CMakeFiles/cmTC_b4e4c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d98fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d98fe.dir/build.make CMakeFiles/cmTC_d98fe.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b4e4c.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_b4e4c.dir/feature_tests.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b4e4c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4e4c.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_b4e4c.dir/feature_tests.cxx.o  -o cmTC_b4e4c 
+Building CXX object CMakeFiles/cmTC_d98fe.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_d98fe.dir/feature_tests.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d98fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d98fe.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d98fe.dir/feature_tests.cxx.o  -o cmTC_d98fe 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -484,14 +484,14 @@ make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_marti
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_798d7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_798d7.dir/build.make CMakeFiles/cmTC_798d7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ff998/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ff998.dir/build.make CMakeFiles/cmTC_ff998.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_798d7.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_798d7.dir/feature_tests.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_798d7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_798d7.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_798d7.dir/feature_tests.cxx.o  -o cmTC_798d7 
+Building CXX object CMakeFiles/cmTC_ff998.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_ff998.dir/feature_tests.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ff998
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff998.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_ff998.dir/feature_tests.cxx.o  -o cmTC_ff998 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -557,14 +557,14 @@ make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_marti
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ee291/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ee291.dir/build.make CMakeFiles/cmTC_ee291.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_12888/fast"
+/usr/bin/make -f CMakeFiles/cmTC_12888.dir/build.make CMakeFiles/cmTC_12888.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ee291.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_ee291.dir/feature_tests.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ee291
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee291.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_ee291.dir/feature_tests.cxx.o  -o cmTC_ee291 
+Building CXX object CMakeFiles/cmTC_12888.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_12888.dir/feature_tests.cxx.o -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_12888
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12888.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_12888.dir/feature_tests.cxx.o  -o cmTC_12888 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -628,28 +628,28 @@ make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_marti
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a4e00/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a4e00.dir/build.make CMakeFiles/cmTC_a4e00.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_25144/fast"
+/usr/bin/make -f CMakeFiles/cmTC_25144.dir/build.make CMakeFiles/cmTC_25144.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a4e00.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_a4e00.dir/CheckIncludeFile.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a4e00
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4e00.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a4e00.dir/CheckIncludeFile.c.o  -o cmTC_a4e00 
+Building C object CMakeFiles/cmTC_25144.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_25144.dir/CheckIncludeFile.c.o   -c /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_25144
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25144.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_25144.dir/CheckIncludeFile.c.o  -o cmTC_25144 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_22d4a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_22d4a.dir/build.make CMakeFiles/cmTC_22d4a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8ac3f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ac3f.dir/build.make CMakeFiles/cmTC_8ac3f.dir/build
 make[1]: Entering directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_22d4a.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_22d4a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_22d4a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22d4a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_22d4a.dir/CheckFunctionExists.c.o  -o cmTC_22d4a -lpthread 
+Building C object CMakeFiles/cmTC_8ac3f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8ac3f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8ac3f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ac3f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_8ac3f.dir/CheckFunctionExists.c.o  -o cmTC_8ac3f -lpthread 
 make[1]: Leaving directory '/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/build/CMakeFiles/CMakeTmp'
 
 

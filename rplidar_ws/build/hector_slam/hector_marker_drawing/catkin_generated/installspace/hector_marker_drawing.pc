@@ -1,0 +1,8 @@
+prefix=/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/install
+
+Name: hector_marker_drawing
+Description: Description of hector_marker_drawing
+Version: 0.5.0
+Cflags: -I${prefix}/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib 
+Requires: roscpp visualization_msgs
