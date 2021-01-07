@@ -9,15 +9,15 @@ Essai commit Paul
 
 # Cahier des charges
 
-Creer un environement de simulaiton et une raspberry_pi qui sera connecter au robot réel et ses capteurs afin de pouvoir plannifier son parcours, les étapes à suivre et effectuer des tâches définies.*
+Creer un environement de simulaiton et une raspberry_pi qui sera connectée au robot réel et ses capteurs afin de pouvoir plannifier son parcours, les étapes à suivre et effectuer des tâches définies.
 
 ## Contraintes
 
-raspberry_pi 3 B
-Connection au PC une fois en dévut d'épreuve
-Vehicule doit être autonome
-Connection avec une arduino, capteurs et camera
-Doit être capable de reconnaitre des points d'interets.
+- raspberry_pi 3 B
+- Connection au PC une fois en début d'épreuve
+- Vehicule doit être autonome
+- Connection avec une arduino, capteurs et camera
+- Doit être capable de reconnaitre des points d'interets.
 
 ## Technologies utilisées:
 
