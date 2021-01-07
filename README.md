@@ -15,3 +15,7 @@ https://www.youtube.com/watch?v=Qrtz0a7HaQ4
 https://www.youtube.com/watch?v=qNdcXUEF7KU&ab_channel=RoboticsWeekends
 
 http://smartroom.metz.supelec.fr/ArchiveCartoTurtlebot/Projet_turtlebot.html
+
+objectifs prochaine séance: faire noeud qui subscribe les valeurs du capteur ultrason et lidar et envoie pour Estelle
+                            passer capteur ultrason sous ros 
+                            faire centrale inertielle
