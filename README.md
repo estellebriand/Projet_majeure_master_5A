@@ -27,6 +27,9 @@ Doit être capable de reconnaitre des points d'interets.
     - rplidar_ros --> gestion du Lidar
     - slam (simultaneous localization and mapping) --> gestion de la map 
 - Matlab (sur PC)
+    - ROS toolboxes
+    - IHM
+    - calcul des trajectoires
 - Darknet (sur rapsberry pi)
     - reconnaissance cannettes
     - reconnaissance couleur
