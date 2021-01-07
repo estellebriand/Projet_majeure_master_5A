@@ -19,3 +19,6 @@ essai mais pareil lors du build ça ne fonctionne pas.
 besoin de ROS neotic.
 
 On retourne sur ROS melodic avec python2.7 et lors des essais avec la detection. Nous trouverons une solution alternative.
+
+## Installer darknet rapsberry pi 3B
+https://github.com/stanfordroboticsclub/RPI-Darknet?fbclid=IwAR2x4Zz1TSCKb-BcZhmubIMINv19E4TcxPDvtAaAM7hQPOCdbDufUoWMwyE
