@@ -7,6 +7,30 @@ Démarrage
 Essai commit Nico
 Essai commit Paul
 
+# Cahier des charges
+
+Creer un environement de simulaiton et une raspberry_pi qui sera connecter au robot réel et ses capteurs afin de pouvoir plannifier son parcours, les étapes à suivre et effectuer des tâches définies.*
+
+## Contraintes
+
+raspberry_pi 3 B
+Connection au PC une fois en dévut d'épreuve
+Vehicule doit être autonome
+Connection avec une arduino, capteurs et camera
+Doit être capable de reconnaitre des points d'interets.
+
+## Technologies utilisées:
+
+- ROS (sur rapsberry pi)
+    - rosserial --> arduino sur robot
+    - dynamixel_motor --> controller moteur en position
+    - rplidar_ros --> gestion du Lidar
+    - slam (simultaneous localization and mapping) --> gestion de la map 
+- Matlab (sur PC)
+- Darknet (sur rapsberry pi)
+    - reconnaissance cannettes
+    - reconnaissance couleur
+- Capteurs : Lidar
 
 ### Exemple de planning type
 ![Image planning prévu](https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/raw/master/autre/Planning-Pr%C3%A9vu.PNG)
