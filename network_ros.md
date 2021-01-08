@@ -8,8 +8,10 @@ rapsberry pi:
 ```shell
 ifconfig
 ```
-start ssh:
+configure ssh:
 ```shell
+/etc/init.d/ssh stop
+sudo /etc/bin/ssh-keygen -A
 /etc/init.d/ssh start
 sudo systemctl status ssh
 ```
@@ -56,7 +58,31 @@ wifi2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-Donc a la fin:
-PC : 192.168.1.29
-raspberry pi : 192.168.1.54
+On obtient:
 
+PC : 192.168.1.29
+
+raspberry pi : ros-ubuntu@192.168.1.54
+
+# Matlab
+Sur simulink:
+Cliquer sur "Apps-->Robot Operating System(ROS)"
+choisir le premier ROS
+Il faut à présent configurer le réseau et l'accès au workspace de notre projet. Selectionner "remember my password" pour faciliter la connection à l'avenir.
+![configuration](matlab/tutos/ros-matlab-config.png)
+Faites un test, vous deviez avoir les ligne suivantes:
+![configuration](matlab/tutos/ros-matlab-success.png)
+
+Si problème de connection, reportez vous à la section "Problèmes possibles", un peu plus bas.
+
+# Problèmes possibles
+
+## la raspberry ne repond pas au ping sur windows:
+cela peut etre du au firewall sur la rasbberry.
+Pour supprimer toute les règles et partir sur les règles par défaut:
+```
+sudo iptables -F
+```
+https://vitux.com/how-to-block-allow-ping-using-iptables-in-ubuntu/
+
+## 
