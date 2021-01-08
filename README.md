@@ -35,6 +35,10 @@ Creer un environement de simulaiton et une raspberry_pi qui sera connectée au r
     - reconnaissance couleur
 - Capteurs : Lidar
 
+# Wiki
+- Flasher une carte SD pour rapsberry pi 3B
+- Connection ssh raspberry pi - ordinateur windows
+
 ### Exemple de planning type
 ![Image planning prévu](https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/raw/master/autre/Planning-Pr%C3%A9vu.PNG)
 
