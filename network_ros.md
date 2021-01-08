@@ -70,6 +70,7 @@ Cliquer sur "Apps-->Robot Operating System(ROS)"
 choisir le premier ROS
 Il faut à présent configurer le réseau et l'accès au workspace de notre projet. Selectionner "remember my password" pour faciliter la connection à l'avenir.
 ![configuration](matlab/tutos/ros-matlab-config.png)
+
 Faites un test, vous deviez avoir les ligne suivantes:
 ![configuration](matlab/tutos/ros-matlab-success.png)
 
