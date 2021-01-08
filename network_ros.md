@@ -86,4 +86,6 @@ sudo iptables -F
 ```
 https://vitux.com/how-to-block-allow-ping-using-iptables-in-ubuntu/
 
-## 
+# liens
+https://www.technig.com/network-ubuntu-and-windows-10/
+http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration#External_references

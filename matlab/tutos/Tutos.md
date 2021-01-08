@@ -94,3 +94,6 @@ ans =
 [Basic message](https://fr.mathworks.com/help/ros/ug/work-with-basic-ros-messages.html)
 
 [Messages spéciaux](https://fr.mathworks.com/help/ros/ug/work-with-specialized-ros-messages.html)
+
+# turtlebot-tracking tuto
+https://www.youtube.com/watch?v=KPlzSsWWfLE
