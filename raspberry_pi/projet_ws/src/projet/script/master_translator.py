@@ -4,14 +4,15 @@ import rospy
 import sys
 from std_msgs.msg import Float64, Bool,String
 
-
+# Ce scirpt permet de communiquer avec une arduino, qui sera l'arduino de commande des moteurs
+#
 class serial_translator:
     
     def __init__(self):
         rospy.init_node('serial_translator', anonymous=True)
 
         #Publishers   
-        self.pub_sensor = rospy.Publisher("/master/fake_sensor", Bool, queue_size = 10)
+        self.pub_sensor = rospy.Publisher("/master/lidar", Bool, queue_size = 10)
 
 
         rospy.sleep(1)
@@ -19,7 +20,7 @@ class serial_translator:
 
         #Subscribers
         rospy.Subscriber("/chatter", String, self.callback)
-        rospy.Subscriber("/sensor/fake_lidar", Bool, self.sensor_callback)
+        rospy.Subscriber("/sensor/lidar", Bool, self.lidar_callback)
 
 
         rospy.spin()
@@ -31,15 +32,15 @@ class serial_translator:
         """
       
         try:
-            rospy.loginfo("from ESP32 : %s",data.data)
+            rospy.loginfo("from arduino : %s",data.data)
         except rospy.ServiceException as e:
             rospy.logwarn("Service call failed: %s"%e)
 
-    def sensor_callback(self,data):
+    def lidar_callback(self,data):
         """
         when receive a topic [/card/<...>], publish the proper topic "/master/<...>"
         """
-        rospy.loginfo("message receive from the sensor/sake_sensor")
+        rospy.loginfo("message receive from the sensor/lidar")
         self.pub_sensor.publish(data.data)           
 
 
