@@ -189,5 +189,6 @@ You should have your RPlidar working and the mapping being done on Rviz.
 | ------ | ------ |
 | RPLidar/RaspberryPu | https://medium.com/robotics-with-ros/installing-the-rplidar-lidar-sensor-on-the-raspberry-pi-32047cde9588|
 | Youtube Video to implement an RPLidar | https://www.youtube.com/watch?v=Qrtz0a7HaQ4 |
-| Youtube video to see an exemple of application | https://www.youtube.com/watch?v=qNdcXUEF7KU&ab_channel=RoboticsWeekends|
+| Youtube video to see an exemple of Lidar with SLAM | https://www.youtube.com/watch?v=qNdcXUEF7KU&ab_channel=RoboticsWeekends|
+| Github project RPi - IMU | https://github.com/pcdangio/ros-driver_mpu9250 |
 # ---------------------------------------------------------------------------------------------
