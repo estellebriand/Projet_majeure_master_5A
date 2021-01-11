@@ -8,6 +8,8 @@ Code Arduino capteur ultrason DONE
 Code RaspberryPi capteur ultrason DONE
 Recherche informations pour connecter le Lidar au raspberryPi
 
+# Documentation utile
+
 https://medium.com/robotics-with-ros/installing-the-rplidar-lidar-sensor-on-the-raspberry-pi-32047cde9588
 
 https://www.youtube.com/watch?v=Qrtz0a7HaQ4
@@ -16,6 +18,10 @@ https://www.youtube.com/watch?v=qNdcXUEF7KU&ab_channel=RoboticsWeekends
 
 http://smartroom.metz.supelec.fr/ArchiveCartoTurtlebot/Projet_turtlebot.html
 
-objectifs prochaine séance: faire noeud qui subscribe les valeurs du capteur ultrason et lidar et envoie pour Estelle
-                            passer capteur ultrason sous ros 
-                            faire centrale inertielle
+## objectifs 1: Mapping Lidar
+
+## objectifs 2: Ultrason RaspberryPi
+
+## objectifs 3: Communication IHM/Lidar
+
+## objectifs 4: Centrale inertielle 
