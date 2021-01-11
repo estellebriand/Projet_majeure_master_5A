@@ -3,11 +3,6 @@ s5_g7_briand_guy_kahan_martinez
 
 **Auteurs:** Estelle BRIAND_Nicolas GUY_Jeremie KAHAN_Paul MARTINEZ
 
-# 04/01/2020:
-Code Arduino capteur ultrason DONE
-Code RaspberryPi capteur ultrason DONE
-Recherche informations pour connecter le Lidar au raspberryPi
-
 # Documentation utile
 
 https://medium.com/robotics-with-ros/installing-the-rplidar-lidar-sensor-on-the-raspberry-pi-32047cde9588
