@@ -39,7 +39,6 @@ Creer un environement de simulaiton et une raspberry_pi qui sera connectée au r
 - Flasher une carte SD pour rapsberry pi 3B
 - Connection ssh raspberry pi - ordinateur windows
 
-# ---------------------------------------------------------------------------------------------
 # Tuto: How to implement a RPLidar on RaspberryPi 3B+ using ROS
 
 ##### Robot Project - CPE Lyon 2020 / 2021
@@ -115,7 +114,7 @@ At this point you should have Rviz running, the Lidar moving and your first mapp
 | RPLidar/RaspberryPu | https://medium.com/robotics-with-ros/installing-the-rplidar-lidar-sensor-on-the-raspberry-pi-32047cde9588|
 | Youtube Video to implement an RPLidar | https://www.youtube.com/watch?v=Qrtz0a7HaQ4 |
 | Youtube video to see an exemple of application | https://www.youtube.com/watch?v=qNdcXUEF7KU&ab_channel=RoboticsWeekends|
-# ---------------------------------------------------------------------------------------------
+
 
 ### Exemple de planning type
 ![Image planning prévu](https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/raw/master/autre/Planning-Pr%C3%A9vu.PNG)
