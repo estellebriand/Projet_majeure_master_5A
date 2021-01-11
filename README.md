@@ -20,7 +20,7 @@ http://smartroom.metz.supelec.fr/ArchiveCartoTurtlebot/Projet_turtlebot.html
 | Communication IHM/Lidar | Doing |
 | IMU | TODO |
 
-# ---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------
 # Tuto: How to implement a RPLidar on RaspberryPi 3B+ using ROS
 
 ##### Robot Project - CPE Lyon 2020 / 2021
@@ -87,7 +87,7 @@ You just have to run the launcher you downloaded on the github from Slamtec and 
 
 At this point you should have Rviz running, the Lidar moving and your first mapping on Rviz.
 
-# ---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------
 
 #  Tuto: How to use SLAM with a RPLidar on RaspberryPi 3B+ using ROS
 
@@ -180,7 +180,7 @@ roslaunch hector_slam_launch tutorial.launch
 
 You should have your RPlidar working and the mapping being done on Rviz. 
 
-# ---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------
 
 
 ### More Informations:
