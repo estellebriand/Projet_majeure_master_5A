@@ -23,7 +23,19 @@ deleteFile(d,'~/Bureau/projet_ws/test_file.txt')
 
 ## Rosbag
 les rosbag permet d'enregistrer les topics et leurs valeurs.
-Il possible
+Il possible de les utiliser pour initialiser une map ou bien d'analyser après avoir effectuer une série de tâches.
+
+Ce sont comme des logs files. Il est possible d'enregistrer un topic spécifique afin que le rosbag ne soit pas trop lourd.
+
+On etablit une connection ssh avec le device pour pouvoir télécharger le rosbag prealablement creer sur le device.
+
+## Suscriber/publisher
+ça marche dans les deux sens, le device peut se connecter à un topic et matlab aussi. Ce sera très utilie pour  obtenir les valeurs du Lidar et de la camera en temps réel.
+
+On creer une fonction callback qui prend en entree (source, data) et on met à jour une variable global afin de pouvoir l'utiliser dans tout les scripts.
+
+## Service: client et server
+Il semble qu'un server creer cote device ne soit pas appelable par le client coté matlab.
 
 ## tutos
 simulation gazebo + Ros matlab + detection couleur: https://github.com/mathworks-robotics/getting-started-ros
