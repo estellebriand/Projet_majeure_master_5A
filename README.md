@@ -139,3 +139,6 @@ Séance 3 du Mardi 05 Janvier 2021 matin :
 - Paul : Debut entrainement à la reconnaissance d'objet, canette/couleur & test materiel
 - Estelle: test du matériel et flash des cartes SD des autres raspberry. Deux raspberry (pi3 et pi4) operationnelles.
 carte SD de 16G / 64G / 128G prêtes + documentation
+
+Séance 5 du Lundi 11 Janvier 2021 matin :
+- Paul : Detection d'objet avec l'internal software du pixy2. Voir pour l'utlisation des coordonnées des box et installation des dependances pour rasberry. https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:hooking_up_pixy_to_a_raspberry_pi
