@@ -13,21 +13,12 @@ https://www.youtube.com/watch?v=qNdcXUEF7KU&ab_channel=RoboticsWeekends
 
 http://smartroom.metz.supelec.fr/ArchiveCartoTurtlebot/Projet_turtlebot.html
 
-## Goal 1: Mapping Lidar
-
-(Done and working)
-
-## Goal 2: Ultrason RaspberryPi
-
-(Done and working)
-
-## Goal 3: Communication IHM/Lidar
-
-(Work in progress)
-
-## Goal 4: Centrale inertielle 
-
-(TODO)
+| Goal | Status |
+| ------ | ------ |
+| Mapping Lidar | DONE |
+| Ultrason RaspberryPi | DONE |
+| Communication IHM/Lidar | Doing |
+| IMU | TODO |
 
 # ---------------------------------------------------------------------------------------------
 # Tuto: How to implement a RPLidar on RaspberryPi 3B+ using ROS
