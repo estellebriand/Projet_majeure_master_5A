@@ -20,8 +20,16 @@ http://smartroom.metz.supelec.fr/ArchiveCartoTurtlebot/Projet_turtlebot.html
 
 ## objectifs 1: Mapping Lidar
 
+(Done and working)
+
 ## objectifs 2: Ultrason RaspberryPi
+
+(Done and working)
 
 ## objectifs 3: Communication IHM/Lidar
 
+(Work in progress)
+
 ## objectifs 4: Centrale inertielle 
+
+(TODO)
