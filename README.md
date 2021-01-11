@@ -87,6 +87,8 @@ You just have to run the launcher you downloaded on the github from Slamtec and 
 
 At this point you should have Rviz running, the Lidar moving and your first mapping on Rviz.
 
+# ---------------------------------------------------------------------------------------------
+
 #  Tuto: How to use SLAM with a RPLidar on RaspberryPi 3B+ using ROS
 
 This tutorial is going to show you how to use SLAM with a RPLidar connected to a RaspberryPi 3B+ and ROS to have a better mapping of the environment. 
@@ -177,6 +179,8 @@ roslaunch hector_slam_launch tutorial.launch
 ```
 
 You should have your RPlidar working and the mapping being done on Rviz. 
+
+# ---------------------------------------------------------------------------------------------
 
 
 ### More Informations:
