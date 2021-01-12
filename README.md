@@ -154,9 +154,9 @@ git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
  In this launchfile, SLAM is working as if the base frame was the base_footprint topics but it is not the case for us, it is the base_link. Also the same for the odom_frame. So we have to change three lines (the 5th, the 6th and the 57th lines).  
  
 ```
-  <arg name="base_frame" default="base_link"/>
-  <arg name="odom_frame" default="base_link"/>
-  <!--<node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 0 0 0 map nav 100"/>-->
+  <arg name="base_frame" default="laser"/>
+  <arg name="odom_frame" default="laser"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 0 0 0 map nav 100"/>
 ```
 
 > Then we need to go on a second launchfile hector_slam/hector_slam_launch/launch/tutorial.launch
