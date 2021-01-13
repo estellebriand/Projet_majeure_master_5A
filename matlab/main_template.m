@@ -10,7 +10,13 @@ robot = robot_class("Test");
 
 %set python environment
 pe = pyenv('Version','2.7');
-
+%visual
+fig = uifigure;
+mylamp1 = uilamp(fig);
+mylamp1.Position = [100 200 20 20]
+mylamp2 = uilamp(fig);
+mylamp3 = uilamp(fig);
+mylamp4 = uilamp(fig);
 %start roscore
 %rosinit("192.168.1.54")
 rostopic list
