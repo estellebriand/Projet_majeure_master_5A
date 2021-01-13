@@ -17,9 +17,32 @@ s5_g7_briand_guy_kahan_martinez - BRANCH: dev_briand
 - [ ] Creation du workspace final
 - [ ] script fusion
 
---> rapsberry pi prête : 3
-## How to
+--> rapsberry pi prête : 2
+# Important
+## Les consignes du concours:
+
+La map pourrait ressembler à ça:
+
+<img src="img/map_idee.png"/>
+
+Il doit reconnaitre les cannettes de couleurs rouge et verte
+<img src="img/canettes.jpg"/>
+## Robot (class)
+
+Le robot sera stocké en tant qu'objet. Il aura differentes propriétés et méthodes.
+
+### Proprieté
+
+- Obstacle --> Dictionnaire qui retourne un bool pour les position 'devant / derriere / gauche /droite"
+- Scan --> les donnée brut venant du lidar
+
+### Methode
+- is_obstacle('position') --> renvoie un booleen
+
+# How to
 - flash_sd_card --> raspberry_pi/flash_sd_card.md
+- Connection raspberry pi - matlab
+
 ## Researchs and links
 
 https://yoraish.com/2020/01/23/a-full-autonomous-stack-a-tutorial-ros-raspberry-pi-arduino-slam/

@@ -1,31 +1,40 @@
 %% Init
-%to share variable for calling callback function
-global scan
+
+% Add path to folders
+addpath(genpath("classes")) % folder with all classes 
+addpath(genpath("functions_callback")) % folder with all function callback for subscriber
+
+% to share variable for calling callback function
+global robot ; % Robot object
+robot = robot_class("Test");
+
 %set python environment
 pe = pyenv('Version','2.7');
-% pe.Version
 
 %start roscore
 %rosinit("192.168.1.54")
 rostopic list
 
-%% subscribe /chatter topic
-% chatter_callback will update the global variable variable with
-% data.Data 
+%% Publishers
+%publisher = rospublisher('/publisher_topic', 'msg_type');
 
-talker_pub = rospublisher('/talker_matlab', 'std_msgs/String');
-chatter = rossubscriber('/chatter', 'std_msgs/String', @chatter_callback);
-
+%% Subscribers
 laserscan = rossubscriber('/scan', 'sensor_msgs/LaserScan', @scan_callback);
+obstacles = rossubscriber('/obstacle_spot', 'std_msgs/String', @obstacle_spot_callback);
 
+fprintf("Node [main_template_matlab] started")
 pause(2) 
-% we print the global variable
-%fprintf("%d",variable)
+
+
+% Check the robot information 
+robot.Obstacle.Front;
+robot.is_obstacle('derriere')
+
 % create and pub the msg
-talkermsg = rosmessage(talker_pub);
-talkermsg.Data = 'talker matlab';
-send(talker_pub,talkermsg);
-pause(2);
+% msg = rosmessage(msg_type);
+% msg.Data = 'talker matlab';
+% send(publisher,msg);
+% pause(2);
 
 
 %% call service /add_two_ints
