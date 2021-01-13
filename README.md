@@ -2,38 +2,28 @@
 s5_g7_briand_guy_kahan_martinez
 
 **Auteurs:** 
-Estelle BRIAND
-Nicolas GUY
-Jeremie KAHAN
-Paul MARTINEZ
+
+- Estelle BRIAND
+- Nicolas GUY
+- Jeremie KAHAN
+- Paul MARTINEZ
+
+## Scenario 
+
+Un robot doté d'une pince doit se déplacer vers une zone d'action "prise" où il devra reconnaitre une cannette de couleur (verte ou rouge) et la prendre à l'aide de sa pince. Il l'amenera ensuite à la zone d'action "depot" de couleur correspondante où il la déposera. 
+A la fin de la tâche, le robot retourne à sa position initiale dans la zone de parking (couleur grise).
 
 # Cahier des charges
 
-Creer un environement de simulaiton et une raspberry_pi qui sera connectée au robot réel et ses capteurs afin de pouvoir plannifier son parcours, les étapes à suivre et effectuer des tâches définies.
+Creer un environement de simulation et une raspberry_pi qui sera connectée au robot réel et ses capteurs afin de pouvoir plannifier son parcours, les étapes à suivre et effectuer des tâches définies.
+Une IHM permettra de connaitre l'etat actuel du robot.
 
 ## Contraintes
 
-- raspberry_pi 3 B
-- Connection au PC une fois en début d'épreuve
-- Vehicule doit être autonome
+- Pas de connection filaire ave le PC
+- Vehicule doit être autonome sans contact visuel direct
 - Connection avec une arduino, capteurs(lidar et IMU) et camera
-- Doit être capable de reconnaitre des points d'interets.
-
-## Technologies utilisées:
-
-- ROS (sur rapsberry pi)
-    - rosserial --> arduino sur robot
-    - dynamixel_motor --> controller moteur en position
-    - rplidar_ros --> gestion du Lidar
-    - hector_slam (simultaneous localization and mapping) --> gestion de la map 
-- Matlab (sur PC)
-    - ROS toolboxes
-    - IHM
-    - calcul des trajectoires
-- Vision (sur rapsberry pi)
-    - reconnaissance cannettes
-    - reconnaissance couleur
-- Capteurs : Lidar & IMU
+- Doit être capable de reconnaitre des points d'interets et les actions associées
 
 # Listes des fonctionnalités :
 
@@ -55,6 +45,22 @@ Creer un environement de simulaiton et une raspberry_pi qui sera connectée au r
     2. [ ] Detection de la couleur
     3. [ ] Calcule la distance de l'objectif
 
+## Technologies utilisées:
+
+- ROS (sur rapsberry pi)
+    - rosserial --> arduino sur robot
+    - dynamixel_motor --> controller moteur en position
+    - rplidar_ros --> gestion du Lidar
+    - hector_slam (simultaneous localization and mapping) --> gestion de la map 
+- Matlab (sur PC)
+    - ROS toolboxes
+    - Mobile Robotics Simulation Toolbox
+    - Calcul des trajectoires
+- Vision (sur rapsberry pi)
+    - reconnaissance cannettes
+    - reconnaissance couleur
+- Capteurs : Lidar & IMU
+
 # Représentation des noeuds
 > En cours de construction
 ```mermaid
@@ -72,16 +78,14 @@ graph LR
 > En cours de construction
 ```mermaid
 sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->John: Hello John, how are you?
+    participant Robot
+    participant remote_PC
+    Robot-> remote_PC: Hello remote_PC, this is my state -> obstacle, detect_color
     loop Healthcheck
-        John->John: Fight against hypochondria
+        remote_PC->remote_PC: process
     end
-    Note right of John: Rational thoughts <br/>prevail...
-    John-->Alice: Great!
-    John->Bob: How about you?
-    Bob-->John: Jolly good!
+    Note right of remote_PC: Update IHM
+    remote_PC-->robot: Move to waypoints
 ```
 
 # Vidéos de présentation
