@@ -80,12 +80,14 @@ graph LR
 sequenceDiagram
     participant Robot
     participant remote_PC
+    participant IHM
     Robot-> remote_PC: Hello remote_PC, this is my state -> obstacle, detect_color
     loop Healthcheck
         remote_PC->remote_PC: process
     end
-    Note right of remote_PC: Update IHM
-    remote_PC-->robot: Move to waypoints
+    Note right of remote_PC: convert all data
+    remote_PC->IHM: print information
+    remote_PC-->Robot: Move to waypoints
 ```
 
 # Vidéos de présentation
