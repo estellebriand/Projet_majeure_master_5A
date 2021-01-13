@@ -21,6 +21,7 @@ class raspberry_publisher():
         rospy.Subscriber('/scan', LaserScan, self.laserscan)
         rate.sleep()
         #rospy.wait_for_message('/scan')
+        rospy.loginfo("Node [raspberry_publisher] started")
         
         while not rospy.is_shutdown():
             scan_pub.publish(self.obstacles_spot)

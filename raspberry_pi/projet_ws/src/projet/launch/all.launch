@@ -10,7 +10,6 @@
     <!-- node -->
     <group ns="nodes">
         <node name ="dynamixel" pkg="motor_control" type="dynamixel_command.py" output="screen"/>
-        <node name ="master_translator" pkg="projet" type="master_translator.py" />
     </group>
 
 </launch>
