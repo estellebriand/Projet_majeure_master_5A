@@ -8,7 +8,7 @@ s5_g7_briand_guy_kahan_martinez
 - Jeremie KAHAN
 - Paul MARTINEZ
 
-## Scenario 
+# Scenario 
 
 Un robot doté d'une pince doit se déplacer vers une zone d'action "prise" où il devra reconnaitre une cannette de couleur (verte ou rouge) et la prendre à l'aide de sa pince. Il l'amenera ensuite à la zone d'action "depot" de couleur correspondante où il la déposera. 
 A la fin de la tâche, le robot retourne à sa position initiale dans la zone de parking (couleur grise).
@@ -65,13 +65,16 @@ Une IHM permettra de connaitre l'etat actuel du robot.
 > En cours de construction
 ```mermaid
 graph LR
-    T1[Odometry source] -- /odom --> Node((local_planner_student))
-    T2[Laser source] -- /scan --> Node((local_planner_student))
 
-    S1[ ] -. /move_to/singleGoal .-> Node
-    S2[ ] -. /move_to/pathGoal .-> Node
+    T1[Odometry source] -- /odom --> Node1((publisher))
+    T2[Laser source] -- /scan --> Node1((publihser))
 
-    Node -- /cmd_vel_mux/input/navi -->D[base controller]
+    Node2 -- /move_to/waypoints --> Node_command((Command))
+    Node_command((Command)) -- /rosserial/cmd_vel --> T3[wheels motor]
+
+    Node1 -- /obstacles_spot -->Node2((Matlab_ROS))
+    Node1 -- /detect_object -->Node2((Matlab_ROS))
+    Node2 -- informations -->IHM[IHM]
 ```
 
 # Description de l'algo
