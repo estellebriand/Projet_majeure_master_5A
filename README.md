@@ -82,10 +82,10 @@ sequenceDiagram
     participant remote_PC
     participant IHM
     Robot-> remote_PC: Hello remote_PC, this is my state -> obstacle, detect_color
-    loop Healthcheck
+    loop Conversion and analysis
         remote_PC->remote_PC: process
     end
-    Note right of remote_PC: convert all data
+    Note right of remote_PC: convert and analysis all data
     remote_PC->IHM: print information
     remote_PC-->Robot: Move to waypoints
 ```
