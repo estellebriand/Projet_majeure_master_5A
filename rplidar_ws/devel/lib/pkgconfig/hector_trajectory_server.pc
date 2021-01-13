@@ -1,0 +1,8 @@
+prefix=/home/ros-ubuntu/Bureau/s5_g7_briand_guy_kahan_martinez/rplidar_ws/devel
+
+Name: hector_trajectory_server
+Description: Description of hector_trajectory_server
+Version: 0.5.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp hector_nav_msgs nav_msgs hector_map_tools tf
