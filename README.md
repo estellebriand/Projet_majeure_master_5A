@@ -40,6 +40,15 @@ Une IHM permettra de connaitre l'etat actuel du robot.
     4. [ ] Algorithme du plus court chemin
     5. [ ] Ordre de déplacement 
 
+3. [ ] Navigation
+    1. [x] Implémentation Lidar et mapping (type RPLidar)
+    2. [x] Mapping réalisé sous ROS_SLAM avec le lidar
+    3. [x] Implémentation capteur Ultrason et détection de distance
+    4. [x] Implémentation IMU permettant de connaitre le Pitch/Yaw/Roll du robot
+    5. [ ] Optimisation de la centrale inertielle (valeur plus fiable et correction erreur)
+    6. [ ] Assemblage des différents capteurs entre eux pour la navigation globale du robot
+
+
 4. [ ] Vision du robot
     1. [x] Detection d'objet "cannette"
     2. [ ] Detection de la couleur
