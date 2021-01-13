@@ -37,22 +37,24 @@ Creer un environement de simulaiton et une raspberry_pi qui sera connectée au r
 
 # Listes des fonctionnalités :
 
-1. [ ] Lidar
-    1. [x] Detection obstacles
-    2. [X] Envoie leur emplacement (devant/derriere/gauche/droite)
-    3. [ ] Mapping ?
-2. [ ] IHM
+1. [ ] IHM
     1. [x] Affichage de la map
     2. [ ] Creation de la map
     3. [x] Affichage information de l'etat du robot
     4. [x] Affichage liste des commandes
-3. [x] ROS Navigation
-    1. [ ] Algorithme du plus court chemin
-    2. [ ] ordre de déplacement 
+
+2. [ ] ROS Matlab
+    1. [x] Detection obstacles + emplacement selon les positions: (devant/derriere/gauche/droite)(utilisant le lidar)
+    2. [x] hector_SLAM
+    3. [ ] Mapping ?
+    4. [ ] Algorithme du plus court chemin
+    5. [ ] Ordre de déplacement 
+
 4. [ ] Vision du robot
     1. [x] Detection d'objet "cannette"
     2. [ ] Detection de la couleur
     3. [ ] Calcule la distance de l'objectif
+
 # Représentation des noeuds
 > En cours de construction
 ```mermaid
@@ -90,10 +92,18 @@ sequenceDiagram
 
 # Liste des dépendances et pré-requis
 
-- a
-- b
+- Raspberry pi 3 B
+    - ubuntu 18.04
+    - ROS
+- Matlab 2020b
+    - Robotics System Toolbox
+    - ROS Toolbox
+    - Simulink
+    - Aerospace Toolbox
+- rplidar A2 
+
 # Mise en oeuvre
-Suivre les wikis (section wiki de gitlab) dans l'ordre suivant:
+Suivre les [wikis](https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/wikis/home) (section wiki de gitlab) dans l'ordre suivant:
 - Flasher une carte SD pour rapsberry pi 3B
 - Etablir la connection ssh raspberry pi - ordinateur windows
 - How to use SLAM with a RPLidar on RaspberryPi 3B+ using ROS
