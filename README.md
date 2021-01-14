@@ -78,10 +78,10 @@ graph LR
 
     T1[Odometry source] -- /odom --> Node1((publisher))
     T2[IMU source] -- /imu --> Node1((publisher))
-    T3[Laser source] -- /scan --> Node1((publihser))
+    T3[Laser source] -- /scan --> Node1((publisher))
 
     Node2 -- /move_to/waypoints --> Node_command((Command))
-    Node_command((Command)) -- /rosserial/cmd_vel --> T3[wheels motor]
+    Node_command((Command)) -- /rosserial/cmd_vel --> T4[wheels motor]
 
     Node1 -- /obstacles_spot -->Node2((Matlab_ROS))
     Node1 -- /detect_object -->Node2((Matlab_ROS))
