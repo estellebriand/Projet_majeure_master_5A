@@ -77,7 +77,8 @@ Une IHM permettra de connaitre l'etat actuel du robot.
 graph LR
 
     T1[Odometry source] -- /odom --> Node1((publisher))
-    T2[Laser source] -- /scan --> Node1((publihser))
+    T2[IMU source] -- /imu --> Node1((publisher))
+    T3[Laser source] -- /scan --> Node1((publihser))
 
     Node2 -- /move_to/waypoints --> Node_command((Command))
     Node_command((Command)) -- /rosserial/cmd_vel --> T3[wheels motor]
@@ -94,12 +95,12 @@ sequenceDiagram
     participant Robot
     participant remote_PC
     participant IHM
-    Robot-> remote_PC: Hello remote_PC, this is my state -> obstacle, detect_color
+    Robot-> remote_PC: This is my state -> orientation, obstacle, detect_color
     loop Conversion and analysis
         remote_PC->remote_PC: process
     end
     Note right of remote_PC: convert and analysis all data
-    remote_PC->IHM: print information
+    remote_PC-->IHM: print information
     remote_PC-->Robot: Move to waypoints
 ```
 
