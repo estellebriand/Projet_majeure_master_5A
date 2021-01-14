@@ -1,0 +1,78 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2621571983" file="C:\Users\jerem\Desktop\5ETI\Projet de Majeure\Suivi\IHM Matlab\HIL_IHM_v0_5.prj" location="C:\Users\jerem\Desktop\5ETI\Projet de Majeure\Suivi\IHM Matlab" name="HIL_IHM_v0_5" target="target.mlapps" target-name="Package App">
+    <param.appname>HIL_IHM_v0_5</param.appname>
+    <param.authnamewatermark>Jérémie Kahan</param.authnamewatermark>
+    <param.email>jeremie.kahan@cpe.fr</param.email>
+    <param.company>CPE Lyon</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>Test IHM</param.summary>
+    <param.description>Séance 1</param.description>
+    <param.screenshot>C:\Users\jerem\AppData\Local\Temp\tp1e474d40_ef76_4b91_a565_d31875fce426.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>14114380-01c9-4232-8fe9-3106e281b81e</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\HIL_IHM_v0_5.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\jerem\Desktop\5ETI\Projet de Majeure\Suivi" name="IHM Matlab" optional="false">C:\Users\jerem\Desktop\5ETI\Projet de Majeure\Suivi\IHM Matlab</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

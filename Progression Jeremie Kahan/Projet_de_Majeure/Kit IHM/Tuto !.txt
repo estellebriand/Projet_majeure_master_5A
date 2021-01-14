@@ -1,0 +1,7 @@
+1) Lancer Matlab,
+2) Définir le répertoire de travail Matlab au dossier "mobile-robotics-simulation-toolbox",
+3) Ouvrir le programme "startMobileRoboticsSimulationToolbox" de ce répertoire,
+4) Run ce programme,
+5) Ouvrir le programme "MATLAB_JK_IHM" à la racine de ce Kit IHM,
+6) Run ce programme,
+7) Ouvrir "APP_JK_HIL_IHM_v5_0" qui est l'application IHM.
