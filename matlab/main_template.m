@@ -6,6 +6,7 @@ addpath(genpath("functions_callback")) % folder with all function callback for s
 
 % to share variable for calling callback function
 global robot ; % Robot object
+global mylamps;
 robot = robot_class("Test");
 
 %set python environment
@@ -13,10 +14,14 @@ pe = pyenv('Version','2.7');
 %visual
 fig = uifigure;
 mylamp1 = uilamp(fig);
-mylamp1.Position = [100 200 20 20]
+mylamp1.Position = [250 250 20 20];
 mylamp2 = uilamp(fig);
+mylamp2.Position = [250 050 20 20];
 mylamp3 = uilamp(fig);
+mylamp3.Position = [150 150 20 20];
 mylamp4 = uilamp(fig);
+mylamp4.Position = [350 150 20 20];
+mylamps = [mylamp1,mylamp2,mylamp3,mylamp4];
 %start roscore
 %rosinit("192.168.1.54")
 rostopic list
@@ -34,7 +39,12 @@ pause(2)
 
 % Check the robot information 
 robot.Obstacle.Front;
-robot.is_obstacle('derriere')
+
+for i = 1:10
+	fprintf("\nY a-t-il un obstacle derriere ?: %s\n", robot.is_obstacle('derriere'))
+	pause(0.5) 
+
+end
 
 % create and pub the msg
 % msg = rosmessage(msg_type);

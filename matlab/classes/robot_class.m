@@ -6,15 +6,22 @@ classdef robot_class
         Name % Name of the robot
         Obstacle %  Give booleans if obstacles place on the front/back/left/right
         Scan % raw data from the LIDAR
+        
         Map %  matrix filled with 0 or 1 representing the map
+        Waypoints % All the points to achieve goals
+        Command % Command order to send to the robot
+        
+        Action % l'action en cours
+        
     end
     
     methods
         function obj = robot_class(name)
             %ROBOT Construct an instance of this class
             obj.Name = name;
+            obj.Obstacle = obstacle_class();
         end
-        
+
         function bool = is_obstacle(obj,position)
             %ROBOT Construct an instance of this class
             if position == "devant"
