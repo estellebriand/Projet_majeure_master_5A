@@ -11,10 +11,12 @@ class raspberry_publisher():
     def __init__(self):
 
         self.obstacles_spot=  ""
+        self.object_detected = ""
         rospy.init_node('raspberry_publisher', anonymous=True)
 
         #pub = rospy.Publisher('/chatter', String, queue_size=10)
         scan_pub = rospy.Publisher('/obstacle_spot', String, queue_size=10)
+        self.object_detected_pub = rospy.Publisher('/object_detected', String, queue_size=10)
 
         rate = rospy.Rate(2) # 10hz
         
@@ -25,6 +27,7 @@ class raspberry_publisher():
         
         while not rospy.is_shutdown():
             scan_pub.publish(self.obstacles_spot)
+            self.detection()
             rate.sleep()
 
     def test(self):
@@ -67,8 +70,11 @@ class raspberry_publisher():
                     obstacles["gauche"] = True
 
         self.obstacles_spot = "devant " + str(obstacles["devant"]) +",derriere " + str(obstacles["derriere"]) +",droite " + str(obstacles["droite"]) +",gauche " + str(obstacles["gauche"])
+        return
 
-
+    def detection(self):
+        self.object_detected= "Cannette x y"
+        self.object_detected_pub.publish(self.object_detected)
 
 
 if __name__ == '__main__':
