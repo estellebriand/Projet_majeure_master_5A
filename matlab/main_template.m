@@ -1,9 +1,9 @@
 %% Init
 
 % Add path to folders
-addpath(genpath("classes")) % folder with all classes 
-addpath(genpath("functions_callback")) % folder with all function callback for subscriber
-
+addpath(genpath("classes")); % folder with all classes 
+addpath(genpath("functions_callback")); % folder with all function callback for subscriber
+addpath(genpath("envoi Estelle"));
 % to share variable for calling callback function
 global robot ; % Robot object
 global mylamps;
