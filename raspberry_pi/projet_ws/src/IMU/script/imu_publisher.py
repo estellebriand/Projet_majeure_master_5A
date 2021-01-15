@@ -2,7 +2,7 @@
 
 from MPU6050 import MPU6050
 import rospy
-from std_msgs import String
+from std_msgs.msg import String
 
 class imu_publisher():
     def __init__(self):
@@ -72,7 +72,7 @@ class imu_publisher():
                     #print('roll: ' + str(roll_pitch_yaw.x))
                     #print('pitch: ' + str(roll_pitch_yaw.y))
                     #print('yaw: ' + str(roll_pitch_yaw.z*2))
-                    self.imu_pu.publish('roll ' + str(roll_pitch_yaw.x) +'\npitch ' + str(roll_pitch_yaw.y) + '\nyaw ' + str(roll_pitch_yaw.z*2))
+                    self.imu_pub.publish('roll ' + str(roll_pitch_yaw.x) +'\npitch ' + str(roll_pitch_yaw.y) + '\nyaw ' + str(roll_pitch_yaw.z*2))
                 count += 1
 
 if __name__ == '__main__':
