@@ -1,5 +1,5 @@
 %% Init
-
+rosshutdown;
 % Add path to folders
 addpath(genpath("classes")); % folder with all classes 
 addpath(genpath("functions_callback")); % folder with all function callback for subscriber
@@ -22,8 +22,9 @@ mylamp3.Position = [150 150 20 20];
 mylamp4 = uilamp(fig);
 mylamp4.Position = [350 150 20 20];
 mylamps = [mylamp1,mylamp2,mylamp3,mylamp4];
+
 %start roscore
-%rosinit("192.168.1.54")
+rosinit("192.168.1.54")
 rostopic list
 
 %% Publishers

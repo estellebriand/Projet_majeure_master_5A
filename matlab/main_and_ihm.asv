@@ -45,16 +45,14 @@ viz.mapName = 'jk_map';
 pose = [3; 4; 0];
 viz(pose)
 
-app = APP_JK_HIL_IHM_v10_0_estelle_variable_test;
 %% ROS
-path = [1,1 ; 2,10 ; 3, 12345; 4,987 ; 5,1222];
 robot = robot_class("test");
 
 rosshutdown;
 rosinit("192.168.1.54") %start roscore
 rostopic list
 
-pause(10) % wait for ihm 
+pause(5) % T 
 
 % Subscribers
 laserscan = rossubscriber('/scan', 'sensor_msgs/LaserScan', @scan_callback);
@@ -65,6 +63,6 @@ pause(2)
 
 %% Estelle :
 %test_variable_Estelle = "Hello World I'm Estelle!";
-
+app = APP_JK_HIL_IHM_v10_0_estelle_variable_test;
 % Appel de la fonction "func_IHM" créée dans Matlab App
 % results = func_IHM(app);
