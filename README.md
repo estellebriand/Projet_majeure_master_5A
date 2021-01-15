@@ -47,8 +47,9 @@ Une IHM permettra de connaitre l'etat actuel du robot.
     2. [x] Mapping réalisé sous ROS_SLAM avec le lidar
     3. [x] Implémentation capteur Ultrason et détection de distance
     4. [x] Implémentation IMU permettant de connaitre le Pitch/Yaw/Roll du robot
-    5. [ ] Optimisation de la centrale inertielle (valeur plus fiable et correction erreur)
+    5. [X] Optimisation de la centrale inertielle (valeur plus fiable et correction erreur)
     6. [ ] Assemblage des différents capteurs entre eux pour la navigation globale du robot
+    7. [ ] Evitement d'obstacle autonome
 
 4. [ ] Vision du robot
     1. [x] Detection d'objet "cannette"
