@@ -1,6 +1,8 @@
 # Projet de majeure "Robotique de service"
 s5_g7_briand_guy_kahan_martinez
 
+https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/blob/master/Progression%20Jeremie%20Kahan/Projet_de_Majeure/2021.01.17%20IHM-HIL%203D%20Collisions%20OK%20-%20Simscape%20Multibody%20Ready/Assemblage_STL.STL 
+
 **Auteurs:** 
 
 - Estelle BRIAND
