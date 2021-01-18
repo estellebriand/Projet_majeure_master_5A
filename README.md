@@ -1,7 +1,7 @@
 # Projet de majeure "Robotique de service"
 s5_g7_briand_guy_kahan_martinez
 
-<script src="https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/blob/master/stl_dir/Assemblage_STL.STL"></script>
+<script src="https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/blob/master/stl_dir/Assemblage_STL.STL"/>
 
 **Auteurs:** 
 
