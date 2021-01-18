@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="01/17/21||21:16:41" using="Simscape Multibody Link Version 7.2" from="SolidWorks 27.2.0"/>
+<ModelUnits mass="kilogram" length="meter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assemblage_Robot" uid="Assemblage_Robot" version="191">
+<AssemblyFile name="Assemblage_Robot.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Bout de pince-2" uid="Bout de pince-2" entityUid="Bout de pince*:*Défaut">
+<Transform>
+<Rotation>0.98111031872501731 0.19344906950227256 1.1233010570169758e-13 0.19344906950227256 -0.98111031872501731 2.216654584572823e-14 1.1449632347534593e-13 0 -0.99999999999999989</Rotation>
+<Translation>0.11915903257569581 0.25624253042435491 0.15845524676922429</Translation>
+</Transform>
+</Instance>
+<Instance name="Roue 1 et 2-3" uid="Roue 1 et 2-3" entityUid="Roue 1 et 2*:*Défaut">
+<Transform>
+<Rotation>-0.98452376644721828 -0.17525111497671975 0 -0.17525111497671975 0.98452376644721828 0 0 0 -1</Rotation>
+<Translation>-0.057516112331358088 -0.051453759838455571 0.13250000000000001</Translation>
+</Transform>
+</Instance>
+<Instance name="Mini bras pince 1 2 3 et 4-2" uid="Mini bras pince 1 2 3 et 4-2" entityUid="Mini bras pince 1 2 3 et 4*:*Défaut">
+<Transform>
+<Rotation>0.97826387553725658 -0.19344906950227198 -0.074680970317291318 0.19288782600543572 0.98111031872501731 -0.014725116983970887 0.076118830769552531 0 0.99709875318459618</Rotation>
+<Translation>0.079061227767714043 0.24120152764663949 0.24510489961203596</Translation>
+</Transform>
+</Instance>
+<Instance name="Bout de pince-1" uid="Bout de pince-1" entityUid="Bout de pince*:*Défaut">
+<Transform>
+<Rotation>0.98111031872501742 -0.19344906950227278 7.1446475846976425e-14 0.19344906950227278 0.98111031872501742 1.409001918147303e-14 -7.2822575789931405e-14 0 1</Rotation>
+<Translation>0.11993282885373986 0.25231808914946124 0.24854475323078257</Translation>
+</Transform>
+</Instance>
+<Instance name="Mini bras pince 1 2 3 et 4-1" uid="Mini bras pince 1 2 3 et 4-1" entityUid="Mini bras pince 1 2 3 et 4*:*Défaut">
+<Transform>
+<Rotation>0.97826387553725558 -0.19344906950227181 -0.074680970317304751 0.1928878260054353 0.98111031872501742 -0.014725116983973545 0.076118830769566215 0 0.99709875318459518</Rotation>
+<Translation>0.079061227767706979 0.2412015276466381 0.23310489961203787</Translation>
+</Transform>
+</Instance>
+<Instance name="Motor-1" uid="Motor-1" entityUid="Motor*:*Défaut">
+<Transform>
+<Rotation>0.98111031872501719 -0.19344906950227259 0 0.19344906950227259 0.98111031872501719 0 0 0 0.99999999999999989</Rotation>
+<Translation>0.0088515495198196719 0.22029944922949757 0.21949999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="Bras 1 et 2-1" uid="Bras 1 et 2-1" entityUid="Bras 1 et 2*:*Défaut">
+<Transform>
+<Rotation>0.79681311289820311 0.60422583784002137 0 -0.60422583784002137 0.79681311289820311 0 0 0 1</Rotation>
+<Translation>-0.10392234603578643 0.084390716511196492 0.18149999999999999</Translation>
+</Transform>
+</Instance>
+<Instance name="Mini bras pince 1 2 3 et 4-3" uid="Mini bras pince 1 2 3 et 4-3" entityUid="Mini bras pince 1 2 3 et 4*:*Défaut">
+<Transform>
+<Rotation>0.97826387553724847 -0.19344906950227203 0.074680970317397385 0.19288782600543414 0.98111031872501731 0.014725116983991824 -0.076118830769660639 0 0.99709875318458785</Rotation>
+<Translation>0.07980803747078391 0.24134877881645939 0.17186608791979624</Translation>
+</Transform>
+</Instance>
+<Instance name="Chassis-1" uid="Chassis-1" grounded="true" entityUid="Chassis*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.15151611233135809 -0.026453759838455573 0.26750000000000002</Translation>
+</Transform>
+</Instance>
+<Instance name="Bras 1 et 2-2" uid="Bras 1 et 2-2" entityUid="Bras 1 et 2*:*Défaut">
+<Transform>
+<Rotation>0.82682556807747021 0.56245842510657507 0 -0.56245842510657507 0.82682556807747021 0 0 0 1</Rotation>
+<Translation>-0.10385181629046124 0.11596003730371995 0.18749999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="Poussoir central pince-1" uid="Poussoir central pince-1" entityUid="Poussoir central pince*:*Défaut">
+<Transform>
+<Rotation>0.98111031872501753 -0.19344906950227247 0 0.19344906950227247 0.98111031872501753 0 0 0 1</Rotation>
+<Translation>0.085533038520403643 0.242553789315927 0.21549999999999997</Translation>
+</Transform>
+</Instance>
+<Instance name="Roue 1 et 2-1" uid="Roue 1 et 2-1" entityUid="Roue 1 et 2*:*Défaut">
+<Transform>
+<Rotation>0.37769523034206037 0.92592997196162652 0 -0.92592997196162652 0.37769523034206037 0 0 0 1</Rotation>
+<Translation>-0.057516112331358095 -0.051453759838455571 0.26750000000000002</Translation>
+</Transform>
+</Instance>
+<Instance name="Mini bras pince 1 2 3 et 4-4" uid="Mini bras pince 1 2 3 et 4-4" entityUid="Mini bras pince 1 2 3 et 4*:*Défaut">
+<Transform>
+<Rotation>0.97826387553724814 -0.19344906950227186 0.07468097031740209 0.19288782600543392 0.98111031872501753 0.014725116983992781 -0.076118830769665302 -1.0802059501489164e-16 0.99709875318458763</Rotation>
+<Translation>0.079808037470782897 0.24134877881645872 0.18386608791979583</Translation>
+</Transform>
+</Instance>
+<Instance name="Mini bras 1 et 2 pince-1" uid="Mini bras 1 et 2 pince-1" entityUid="Mini bras 1 et 2 pince*:*Défaut">
+<Transform>
+<Rotation>0.47755606746530188 -0.19344906950227239 0.85704005736942124 0.094161456793545276 0.98111031872501742 0.16898568739929529 -0.87354096783241575 0 0.48675063175963779</Rotation>
+<Translation>0.088939733046057207 0.24671669505533675 0.20001657277198684</Translation>
+</Transform>
+</Instance>
+<Instance name="Mini bras 1 et 2 pince-2" uid="Mini bras 1 et 2 pince-2" entityUid="Mini bras 1 et 2 pince*:*Défaut">
+<Transform>
+<Rotation>0.47755606746528362 -0.19344906950227223 -0.85704005736943178 0.094161456793541598 0.98111031872501742 -0.16898568739929712 0.87354096783242596 0 0.48675063175961941</Rotation>
+<Translation>0.085784668105201273 0.24609459949138329 0.20877532696488182</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Coaxiale1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Chassis-1</Uid>
+</InstancePath>
+<Position>0.055999999999999994 0.11200000000000003 -0.032000000000000028</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bras 1 et 2-1</Uid>
+</InstancePath>
+<Position>0.0060000000000000053 0.0059999999999999915 -0.035999999999999976</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Chassis-1</Uid>
+</InstancePath>
+<Position>0.055999999999999994 0.11200000000000003 -0.086000000000000021</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bras 1 et 2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coïncidente2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Chassis-1</Uid>
+</InstancePath>
+<Position>0.055999999999999994 0.14400000000000002 -0.04200000000000001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bras 1 et 2-2</Uid>
+</InstancePath>
+<Position>0 0 0.038000000000000006</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Chassis-1</Uid>
+</InstancePath>
+<Position>0.055999999999999994 0.14400000000000002 -0.032000000000000084</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bras 1 et 2-2</Uid>
+</InstancePath>
+<Position>0.0060000000000000053 0.0059999999999999915 -0.036000000000000004</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bras 1 et 2-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0 0 -0.032000000000000001</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bras 1 et 2-2</Uid>
+</InstancePath>
+<Position>0.0060000000000000331 0.182 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.0029999999999999888 0.043000000000000038 -0.032000000000000001</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bras 1 et 2-1</Uid>
+</InstancePath>
+<Position>0.0060000000000000053 0.18200000000000005 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.0029999999999999888 0.0050000000000000044 -0.032000000000000001</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Chassis-1</Uid>
+</InstancePath>
+<Position>0.094 -0.024999999999999998 0.020000000000000018</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Roue 1 et 2-1</Uid>
+</InstancePath>
+<Position>0 0 0.029999999999999971</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Chassis-1</Uid>
+</InstancePath>
+<Position>0 0.0099999999999999985 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Roue 1 et 2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.054999999999999993 0.011999999999999983 -0.016000000000000014</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Poussoir central pince-1</Uid>
+</InstancePath>
+<Position>-0.01999999999999999 0.0050000000000000044 -0.012000000000000011</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.07099999999999998 0.0099252478907487784 -0.056999999999999995</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-1</Uid>
+</InstancePath>
+<Position>0.050000000000000017 0.0029999999999999749 -0.010000000000000009</Position>
+<Axis>-1.3449201020158695e-16 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.078293015343529504 -0.0060000000000000053 0.009000000000000008</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-1</Uid>
+</InstancePath>
+<Position>0.0050000000000000044 0.0080000000000000071 -0.0049999999999999767</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.078293015343529504 -0.0060000000000000053 0.020999999999999991</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-2</Uid>
+</InstancePath>
+<Position>0.0050000000000000044 0.0079999999999999793 -0.0050000000000000044</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.07099999999999998 0.0099252478907487784 -0.056999999999999995</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-2</Uid>
+</InstancePath>
+<Position>0.049999999999999989 0.0030000000000000027 -0.010000000000000009</Position>
+<Axis>-1.0858991429011909e-16 0.99999999999999989 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coïncidente8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.07099999999999998 0.0099252478907487784 -0.056999999999999995</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-4</Uid>
+</InstancePath>
+<Position>0.050000000000000003 0.0030000000000000027 -0.010000000000000009</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale10">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.078293015343529504 -0.0060000000000000053 -0.040999999999999981</Position>
+<Axis>1.3877787807814457e-16 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-4</Uid>
+</InstancePath>
+<Position>0.0049999999999999906 0.0079999999999999793 -0.0050000000000000044</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.07099999999999998 0.0099252478907487784 -0.056999999999999995</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-3</Uid>
+</InstancePath>
+<Position>0.049999999999999989 0.0030000000000000304 -0.0099999999999999811</Position>
+<Axis>-1.3478163318321766e-16 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale11">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor-1</Uid>
+</InstancePath>
+<Position>0.078293015343529504 -0.0060000000000000053 -0.052999999999999992</Position>
+<Axis>1.3877787807814457e-16 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-3</Uid>
+</InstancePath>
+<Position>0.0049999999999999906 0.0079999999999999793 -0.0049999999999999767</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale12">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-4</Uid>
+</InstancePath>
+<Position>0.021000000000000005 0.0020000000000000018 -0.0050000000000000044</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras 1 et 2 pince-1</Uid>
+</InstancePath>
+<Position>0.025000000000000008 -0.00050000000000000044 -0.0018406753067665704</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale13">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Poussoir central pince-1</Uid>
+</InstancePath>
+<Position>0.0040000000000000036 0.0079999999999999793 -0.019000000000000017</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras 1 et 2 pince-1</Uid>
+</InstancePath>
+<Position>0.0030000000000000027 -0.00050000000000000044 -0.0018406753067665704</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale14">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Poussoir central pince-1</Uid>
+</InstancePath>
+<Position>0.0040000000000000036 0.0079999999999999793 -0.0050000000000000044</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras 1 et 2 pince-2</Uid>
+</InstancePath>
+<Position>0.0030000000000000027 -0.00050000000000000044 -0.0018406753067665704</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale16">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-1</Uid>
+</InstancePath>
+<Position>0.021000000000000019 0.001999999999999974 -0.0049999999999999767</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras 1 et 2 pince-2</Uid>
+</InstancePath>
+<Position>0.025000000000000022 -0.00050000000000000044 -0.0018406753067665843</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale17">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-3</Uid>
+</InstancePath>
+<Position>0.045000000000000012 0.0080000000000000349 -0.0049999999999999767</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bout de pince-2</Uid>
+</InstancePath>
+<Position>0.0030000000000000027 0 -0.0050000000000000044</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale18">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-4</Uid>
+</InstancePath>
+<Position>0.045000000000000026 0.0080000000000000071 -0.0050000000000000044</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bout de pince-2</Uid>
+</InstancePath>
+<Position>0.0030000000000000027 0 -0.017000000000000015</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente12">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-4</Uid>
+</InstancePath>
+<Position>0.050000000000000003 0.0030000000000000027 -0.010000000000000009</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bout de pince-2</Uid>
+</InstancePath>
+<Position>0 0.0040000000000000036 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale19">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-1</Uid>
+</InstancePath>
+<Position>0.045000000000000012 0.0079999999999999793 -0.0050000000000000044</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bout de pince-1</Uid>
+</InstancePath>
+<Position>0.0029999999999999749 0 -0.017000000000000015</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale20">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-2</Uid>
+</InstancePath>
+<Position>0.045000000000000012 0.0080000000000000071 -0.0050000000000000044</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bout de pince-1</Uid>
+</InstancePath>
+<Position>0.0029999999999999749 0 -0.0050000000000000044</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente13">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-2</Uid>
+</InstancePath>
+<Position>0.049999999999999989 0.0030000000000000027 -0.010000000000000009</Position>
+<Axis>-1.0858991429011909e-16 0.99999999999999989 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bout de pince-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coïncidente14">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Chassis-1</Uid>
+</InstancePath>
+<Position>0 0.0099999999999999985 -0.13500000000000001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Roue 1 et 2-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale21">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Chassis-1</Uid>
+</InstancePath>
+<Position>0.094 -0.024999999999999998 -0.155</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Roue 1 et 2-3</Uid>
+</InstancePath>
+<Position>0 0 0.029999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente15">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-1</Uid>
+</InstancePath>
+<Position>0 0.0070000000000000062 -0.010000000000000009</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras 1 et 2 pince-2</Uid>
+</InstancePath>
+<Position>0 0.0035000000000000031 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coïncidente16">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras pince 1 2 3 et 4-4</Uid>
+</InstancePath>
+<Position>0 0.0069999999999999785 -0.010000000000000037</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Mini bras 1 et 2 pince-1</Uid>
+</InstancePath>
+<Position>0 0.0035000000000000031 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Bout de pince" uid="Bout de pince*:*Défaut" version="125">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Bout de pince.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0030470690350851266</Mass>
+<CenterOfMass>0.019363580682249634 0.002 -0.018706684597431175</CenterOfMass>
+<Inertia>1.0907317994703977e-07 5.3678295241425648e-07 4.5543528989411031e-07 0 1.1190676755486847e-07 0</Inertia>
+</MassProperties>
+<GeometryFile name="Bout de pince_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Bras 1 et 2" uid="Bras 1 et 2*:*Défaut" version="149">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Bras 1 et 2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.021919716754404194</Mass>
+<CenterOfMass>0.0060000000000000114 0.094 0.019000000000000013</CenterOfMass>
+<Inertia>5.5377580923362537e-05 5.650238377256952e-06 5.0160250438562142e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Bras 1 et 2_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Chassis" uid="Chassis*:*Défaut" version="249">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Chassis.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.2844774525666387</Mass>
+<CenterOfMass>0.091839398839335229 0.0085320520495519685 -0.06753571429141414</CenterOfMass>
+<Inertia>0.00060449442935819799 0.0012298698753399557 0.00091500593404047104 6.9021841044825465e-07 -3.6412508966034873e-07 4.8554066291202633e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Chassis_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Mini bras 1 et 2 pince" uid="Mini bras 1 et 2 pince*:*Défaut" version="137">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Mini bras 1 et 2 pince.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00035654520910057669</Mass>
+<CenterOfMass>0.01399999999999999 0.0016618879577287044 -0.0019504198216865403</CenterOfMass>
+<Inertia>1.1343678046559585e-09 2.1585428645385357e-08 2.1267718846023593e-08 3.4477256184435465e-12 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Mini bras 1 et 2 pince_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Mini bras pince 1 2 3 et 4" uid="Mini bras pince 1 2 3 et 4*:*Défaut" version="143">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Mini bras pince 1 2 3 et 4.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0030220353454107796</Mass>
+<CenterOfMass>0.024933468041618022 0.005000000000000001 -0.005000000000000001</CenterOfMass>
+<Inertia>6.0623207164442589e-08 6.1569089497693412e-07 6.3012202302115111e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Mini bras pince 1 2 3 et 4_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Motor" uid="Motor*:*Défaut" version="195">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Motor.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.041160831009246175</Mass>
+<CenterOfMass>0.042620238839114838 0.01363011302286038 -0.016</CenterOfMass>
+<Inertia>1.0379646854513572e-05 2.0314181166363509e-05 1.6541752520036247e-05 0 0 2.1198265708567853e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Motor_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Poussoir central pince" uid="Poussoir central pince*:*Défaut" version="177">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Poussoir central pince.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0013643539364174449</Mass>
+<CenterOfMass>0.0011487041425124501 0.005000000000000001 -0.012000000000000004</CenterOfMass>
+<Inertia>5.1424092244805228e-08 9.1990402934546162e-08 6.7013436866843962e-08 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Poussoir central pince_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Roue 1 et 2" uid="Roue 1 et 2*:*Défaut" version="117">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Roue 1 et 2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.099674880916770181</Mass>
+<CenterOfMass>-8.0018863650803548e-05 6.1396208372077154e-05 0.01510085887636908</CenterOfMass>
+<Inertia>3.4005131683247942e-05 3.4056921364153653e-05 5.2777745581535475e-05 -1.2177597315758405e-07 1.5871297675236353e-07 9.6613955487490718e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Roue 1 et 2_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
