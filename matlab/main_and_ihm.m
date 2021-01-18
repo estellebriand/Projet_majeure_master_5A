@@ -15,7 +15,7 @@ global app; % Nom du Matlab App associé
 
 %set python environment
 pe = pyenv('Version','2.7');
-
+robot = robot_class("test","192.168.43.209");
 %% IHM
 startMobileRoboticsSimulationToolbox 
 test_variable_Estelle = robot.Obstacle.Left;
@@ -47,20 +47,27 @@ viz(pose)
 
 app = APP_JK_HIL_IHM_v10_0_estelle_variable_test;
 %% ROS
+%simu = RobotSimulator
 path = [1,1 ; 2,10 ; 3, 12345; 4,987 ; 5,1222];
-robot = robot_class("test");
+
 
 rosshutdown;
-rosinit("192.168.1.54") %start roscore
+rosinit(robot.Ip_address) %start roscore
 rostopic list
 
 pause(10) % wait for ihm 
-
+% Publishers
+%command_vel_pub = rospublisher('/matlab/cmd_vel', std_msgs/Twist);
 % Subscribers
 laserscan = rossubscriber('/scan', 'sensor_msgs/LaserScan', @scan_callback);
 obstacles = rossubscriber('/obstacle_spot', 'std_msgs/String', @obstacle_spot_callback);
+rossubscriber('/imu', 'std_msgs/String', @imu_callback);
 
 fprintf("Node [main_template_matlab] started")
+% create and pub the msg
+%msg = rosmessage(std_msgs/Twist);
+% msg.Data = 'talker matlab';
+%send(command_vel_pub,msg);
 pause(2) 
 
 %% Estelle :
