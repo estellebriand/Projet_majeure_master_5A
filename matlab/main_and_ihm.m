@@ -15,7 +15,7 @@ global app; % Nom du Matlab App associé
 
 %set python environment
 pe = pyenv('Version','2.7');
-robot = robot_class("test","192.168.43.209");
+robot = robot_class("test","192.168.43.40");
 %% IHM
 startMobileRoboticsSimulationToolbox 
 test_variable_Estelle = robot.Obstacle.Left;
@@ -62,6 +62,7 @@ pause(10) % wait for ihm
 laserscan = rossubscriber('/scan', 'sensor_msgs/LaserScan', @scan_callback);
 obstacles = rossubscriber('/obstacle_spot', 'std_msgs/String', @obstacle_spot_callback);
 rossubscriber('/imu', 'std_msgs/String', @imu_callback);
+rossubscriber('/object_detection', 'std_msgs/String', @vision_callback);
 
 fprintf("Node [main_template_matlab] started")
 % create and pub the msg
