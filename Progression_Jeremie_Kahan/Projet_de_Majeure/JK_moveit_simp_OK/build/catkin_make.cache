@@ -1,0 +1,2 @@
+HIL_moveit_simplified:HIL_pkg
+-DCATKIN_DEVEL_PREFIX=/home/student/Bureau/JK_moveit_simp/devel -DCMAKE_INSTALL_PREFIX=/home/student/Bureau/JK_moveit_simp/install -G Unix Makefiles

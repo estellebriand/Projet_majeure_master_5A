@@ -1,0 +1,8 @@
+prefix=/home/student/Bureau/JK_moveit_simp/install
+
+Name: HIL_moveit_simplified
+Description: Description of HIL_moveit_simplified
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

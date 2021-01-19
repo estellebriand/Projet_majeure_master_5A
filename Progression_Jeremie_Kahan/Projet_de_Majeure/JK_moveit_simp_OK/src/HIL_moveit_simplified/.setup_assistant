@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: HIL_pkg
+    relative_path: urdf/Assemblage_Robot.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/Robot.srdf
+  CONFIG:
+    author_name: jeremie_kahan
+    author_email: jeremie.kahan@cpe.fr
+    generated_timestamp: 1611071673

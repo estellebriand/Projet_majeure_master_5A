@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<robot name="Robot" xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+  
+  <material name="red">
+    <color rgba="0 0 0.8 0.3"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="1 0 0 1"/>
+  </material>  
+  
+
+
+  <link name="robot/chassis">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/chassis.STL" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/chassis.STL" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+  <link name="robot/bras">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/bras.STL" scale="1 1 1"/>  
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/bras.STL" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+  <link name="robot/pince">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/pince.STL" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/pince.STL" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+
+
+  <joint name="chassis_bras" type="revolute">
+    <parent link="robot/chassis"/>
+    <child link="robot/bras"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-1.57" upper="0.0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <joint name="bras_pince" type="revolute">
+    <parent link="robot/bras"/>
+    <child link="robot/pince"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-1.57" upper="0.0" />
+    <axis xyz="1 0 0" />
+  </joint>
+</robot>
