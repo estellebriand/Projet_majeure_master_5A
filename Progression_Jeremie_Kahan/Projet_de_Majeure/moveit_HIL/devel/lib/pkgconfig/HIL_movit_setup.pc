@@ -1,0 +1,8 @@
+prefix=/fs03/share/users/jeremie.kahan/home/Bureau/s5_g7_briand_guy_kahan_martinez/Progression_Jeremie_Kahan/Projet_de_Majeure/moveit_HIL/devel
+
+Name: HIL_movit_setup
+Description: Description of HIL_movit_setup
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

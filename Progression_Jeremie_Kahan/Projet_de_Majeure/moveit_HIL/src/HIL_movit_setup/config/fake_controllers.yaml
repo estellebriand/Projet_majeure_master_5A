@@ -1,0 +1,16 @@
+controller_list:
+  - name: fake_HIL_group_controller
+    joints:
+      - robot_chassis_virtual_joint
+      - chassis_bras1
+      - chassis_bras2
+      - bras2_moteur
+      - moteur_poussoirCentralPince
+      - poussoirCentralPince_miniBrasPinceInt2
+      - poussoirCentralPince_miniBrasPinceExt1
+      - miniBrasPinceExt2_boutDePince1
+      - chassis_roue1
+      - chassis_roue2
+initial:  # Define initial robot poses.
+  - group: HIL_group
+    pose: tourner1

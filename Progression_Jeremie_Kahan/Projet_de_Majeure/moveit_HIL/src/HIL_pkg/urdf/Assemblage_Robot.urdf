@@ -1,0 +1,463 @@
+<?xml version="1.0" ?>
+<robot name="Robot" xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+  
+  <material name="red">
+    <color rgba="0 0 0.8 0.3"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="1 0 0 1"/>
+  </material>  
+  
+
+
+  <link name="robot/chassis">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/chassis.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/chassis.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+
+
+  <link name="robot/roue1">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/roue1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/roue1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+  <link name="robot/roue2">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/roue2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/roue2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+
+  <link name="robot/bras1">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/bras1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/bras1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+  <link name="robot/bras2">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/bras2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/bras2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+
+  <link name="robot/moteur">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/moteur.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/moteur.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+
+  <link name="robot/poussoirCentralPince">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/poussoirCentralPince.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/poussoirCentralPince.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+
+  <link name="robot/miniBrasPinceInt1">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceInt1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceInt1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+  <link name="robot/miniBrasPinceInt2">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceInt2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceInt2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+
+  <link name="robot/miniBrasPinceExt1">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceExt1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceExt1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+  <link name="robot/miniBrasPinceExt2">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceExt2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceExt2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+  <link name="robot/miniBrasPinceExt3">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceExt3.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceExt3.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+  <link name="robot/miniBrasPinceExt4">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceExt4.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/miniBrasPinceExt4.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+
+  <link name="robot/boutDePince1">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/boutDePince1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/boutDePince1.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+  <link name="robot/boutDePince2">
+    <visual>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/boutDePince2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/boutDePince2.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+            <mass value="5" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.004" ixy="0.001" ixz="0" iyy="0.006" iyz="0" izz="0.007" />
+    </inertial>
+  </link>
+
+
+
+
+
+  <joint name="chassis_roue1" type="continuous">
+    <parent link="robot/chassis"/>
+    <child link="robot/roue1"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+  <joint name="chassis_roue2" type="continuous">
+    <parent link="robot/chassis"/>
+    <child link="robot/roue2"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+
+  <joint name="chassis_bras1" type="revolute">
+    <parent link="robot/chassis"/>
+    <child link="robot/bras1"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="chassis_bras2" type="revolute">
+    <parent link="robot/chassis"/>
+    <child link="robot/bras2"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+
+  <joint name="bras1_moteur" type="revolute">
+    <parent link="robot/bras1"/>
+    <child link="robot/moteur"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="bras2_moteur" type="revolute">
+    <parent link="robot/bras2"/>
+    <child link="robot/moteur"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+
+  <joint name="moteur_poussoirCentralPince" type="prismatic">
+    <parent link="robot/moteur"/>
+    <child link="robot/poussoirCentralPince"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+
+  <joint name="poussoirCentralPince_miniBrasPinceInt1" type="revolute">
+    <parent link="robot/poussoirCentralPince"/>
+    <child link="robot/miniBrasPinceInt1"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="poussoirCentralPince_miniBrasPinceInt2" type="revolute">
+    <parent link="robot/poussoirCentralPince"/>
+    <child link="robot/miniBrasPinceInt2"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+
+  <joint name="miniBrasPinceInt1_miniBrasPinceExt" type="revolute">
+    <parent link="robot/miniBrasPinceInt1"/>
+    <child link="robot/miniBrasPinceExt4"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="miniBrasPinceInt2_miniBrasPinceExt" type="revolute">
+    <parent link="robot/miniBrasPinceInt2"/>
+    <child link="robot/miniBrasPinceExt1"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+
+  <joint name="poussoirCentralPince_miniBrasPinceExt1" type="revolute">
+    <parent link="robot/poussoirCentralPince"/>
+    <child link="robot/miniBrasPinceExt1"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="poussoirCentralPince_miniBrasPinceExt2" type="revolute">
+    <parent link="robot/poussoirCentralPince"/>
+    <child link="robot/miniBrasPinceExt2"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="poussoirCentralPince_miniBrasPinceExt3" type="revolute">
+    <parent link="robot/poussoirCentralPince"/>
+    <child link="robot/miniBrasPinceExt3"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="poussoirCentralPince_miniBrasPinceExt4" type="revolute">
+    <parent link="robot/poussoirCentralPince"/>
+    <child link="robot/miniBrasPinceExt4"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+
+  <joint name="miniBrasPinceExt1_boutDePince1" type="revolute">
+    <parent link="robot/miniBrasPinceExt1"/>
+    <child link="robot/boutDePince1"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="miniBrasPinceExt2_boutDePince1" type="revolute">
+    <parent link="robot/miniBrasPinceExt2"/>
+    <child link="robot/boutDePince1"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="miniBrasPinceExt3_boutDePince2" type="revolute">
+    <parent link="robot/miniBrasPinceExt3"/>
+    <child link="robot/boutDePince2"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+
+  <joint name="miniBrasPinceExt4_boutDePince2" type="revolute">
+    <parent link="robot/miniBrasPinceExt4"/>
+    <child link="robot/boutDePince2"/>
+    <origin xyz="0 0 0" />
+    <limit effort="30" velocity="1.0" lower="-2.2" upper="0.7" />
+  </joint>
+</robot>
