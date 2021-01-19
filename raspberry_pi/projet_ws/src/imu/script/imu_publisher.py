@@ -16,9 +16,10 @@ class imu_publisher():
         rospy.loginfo("Node [raspberry_publisher_imu] started")
         
         self.process()
-        rospy.spin()
+        #rospy.spin()
         
     def process(self):
+        rate = rospy.Rate(100) # 10hz
         i2c_bus = 1
         device_address = 0x68
         # The offsets are different for each device and should be changed
@@ -49,14 +50,16 @@ class imu_publisher():
         FIFO_buffer = [0]*64
 
         FIFO_count_list = list()
-        while count < 10000:
+        #while count < 10000:
+        while not rospy.is_shutdown():
+            
             FIFO_count = mpu.get_FIFO_count()
             mpu_int_status = mpu.get_int_status()
 
             # If overflow is detected by status or fifo count we want to reset
             if (FIFO_count == 1024) or (mpu_int_status & 0x10):
                 mpu.reset_FIFO()
-                print('overflow!')
+                #print('overflow!')
             # Check if fifo data is ready
             elif (mpu_int_status & 0x02):
                 # Wait until packet_size number of bytes are ready for reading, default
@@ -72,8 +75,9 @@ class imu_publisher():
                     #print('roll: ' + str(roll_pitch_yaw.x))
                     #print('pitch: ' + str(roll_pitch_yaw.y))
                     #print('yaw: ' + str(roll_pitch_yaw.z*2))
-                    self.imu_pub.publish('roll ' + str(roll_pitch_yaw.x) +'\npitch ' + str(roll_pitch_yaw.y) + '\nyaw ' + str(roll_pitch_yaw.z*2))
+                    self.imu_pub.publish('roll ' + str(roll_pitch_yaw.x) +' pitch ' + str(roll_pitch_yaw.y) + ' yaw ' + str(roll_pitch_yaw.z*2))
                 count += 1
+                rate.sleep()
 
 if __name__ == '__main__':
     try:

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 __author__ = 'Geir Istad'
 """
 MPU6050 Python I2C Class - MPU6050 example usage
