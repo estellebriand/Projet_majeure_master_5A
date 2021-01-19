@@ -20,7 +20,7 @@
 MeEncoderOnBoard Encoder_1(PORT1); //moteur droit
 MeEncoderOnBoard Encoder_2(PORT2); //moteur gauche
 MeEncoderOnBoard Encoder_3(PORT3); //Pince hauteur
-MeEncoderOnBoard Encoder_4(PORT4); //Pince
+MeMegaPiDCMotor Motor_4(PORT4); //Pince
 
 void isr_process_encoder1(void)
 {
@@ -45,6 +45,19 @@ void isr_process_encoder2(void)
     Encoder_2.pulsePosPlus();
   }
 }
+
+void isr_process_encoder3(void)
+{
+  if(digitalRead(Encoder_3.getPortB()) == 0)
+  {
+    Encoder_3.pulsePosMinus();
+  }
+  else
+  {
+    Encoder_3.pulsePosPlus();
+  }
+}
+
 /*=================ROS=================*/
 //creation du ros node
 ros::NodeHandle  nh;
@@ -56,28 +69,47 @@ ros::Publisher starter("arduino/start", &start_msg);
 ros::Publisher state("arduino/state", &state_msg);
 
 
-void forward(int speed){
-  Encoder_1.setMotorPwm(speed);
-  Encoder_2.setMotorPwm(-speed);
-  Encoder_1.updateSpeed();
-  Encoder_2.updateSpeed(); 
+void both_motor(int speed){
+  //control both motor for forward, backward or stop
+  Encoder_1.runSpeed(speed);
+  Encoder_2.runSpeed(-speed);
 }
 
-void turn_left(){
-  Encoder_1.setMotorPwm(50);
-  Encoder_2.setMotorPwm(-70);
-  Encoder_1.updateSpeed();
-  Encoder_2.updateSpeed(); 
+void turn_right(void){
+  //control motor: turn right
+  Encoder_1.runSpeed(0);
+  Encoder_2.runSpeed(-200);
 }
 
+void turn_left(void){
+  //control motor: turn left
+  Encoder_1.runSpeed(200);
+  Encoder_2.runSpeed(0);
+}
+
+void arm_up(void){
+  Encoder_3.moveTo(0,50);
+}
+
+void arm_down(void){
+  Encoder_3.moveTo(700,50);
+}
+
+void close_claw(void){
+  Motor_4.run(-50);
+}
+
+void open_claw(void){
+  Motor_4.run(50);
+}
 void command_callback(const std_msgs::String& data){
   state_msg.data = data.data;
   state.publish(&state_msg);
   if(data.data == "Stop"){
-    forward(0);
+    both_motor(0);
   }
    else if("Forward"){
-    forward(50);
+    both_motor(50);
     }
 
 }
@@ -94,6 +126,7 @@ void setup()
   
   attachInterrupt(Encoder_1.getIntNum(), isr_process_encoder1, RISING);
   attachInterrupt(Encoder_2.getIntNum(), isr_process_encoder2, RISING);
+  attachInterrupt(Encoder_3.getIntNum(), isr_process_encoder3, RISING);
   Serial.begin(115200);
   
   //Set PWM 8KHz
@@ -103,6 +136,7 @@ void setup()
   TCCR2A = _BV(WGM21) | _BV(WGM20);
   TCCR2B = _BV(CS21);
 
+  // For driving motor
   Encoder_1.setPulse(7);
   Encoder_2.setPulse(7);
   Encoder_1.setRatio(26.9);
@@ -111,7 +145,13 @@ void setup()
   Encoder_2.setPosPid(1.8,0,1.2);
   Encoder_1.setSpeedPid(0.18,0,0);
   Encoder_2.setSpeedPid(0.18,0,0);
-}
+
+  // for arm
+  Encoder_3.setPulse(8);
+  Encoder_3.setRatio(46.67);
+  Encoder_3.setPosPid(1.8,0,1.2);
+  Encoder_3.setSpeedPid(0.18,0,0);
+  }
 
 void loop()
 {
@@ -123,37 +163,35 @@ void loop()
     char a = Serial.read();
     switch(a)
     {
-       case '0':
-      Encoder_1.runSpeed(0);
-      Encoder_2.runSpeed(0);
+      case '0':
+      both_motor(0);
+      Encoder_3.runSpeed(0);
+      Motor_4.stop();
       break;
       case '1':
-      Encoder_1.runSpeed(100);
-      Encoder_2.runSpeed(-100);
+      both_motor(50);
       break;
       case '2':
-      Encoder_1.runSpeed(200);
-      Encoder_2.runSpeed(-200);
+      turn_right();
       break;
       case '3':
-      Encoder_1.runSpeed(255);
-      Encoder_2.runSpeed(-255);
+      turn_left();
       break;
       case '4':
-      Encoder_1.runSpeed(-100);
-      Encoder_2.runSpeed(100);
+      arm_up();
       break;
       case '5':
-      Encoder_1.runSpeed(-200);
-      Encoder_2.runSpeed(200);
+      arm_down();
       break;
       case '6':
-      Encoder_1.runSpeed(-255);
-      Encoder_2.runSpeed(255);
+      close_claw();
+      delay(6000);
+      open_claw();
+      delay(6000);
+      Motor_4.stop();
       break;
       case '7':
-      Encoder_1.runSpeed(50);
-      Encoder_2.runSpeed(-200);
+      open_claw();
       break;
       
       default:
@@ -162,8 +200,14 @@ void loop()
   }
   Encoder_1.loop();
   Encoder_2.loop();
+  Encoder_3.loop();
+  /*
   Serial.print("Spped 1:");
   Serial.print(Encoder_1.getCurrentSpeed());
   Serial.print(" ,Spped 2:");
   Serial.println(Encoder_2.getCurrentSpeed());
+  
+  Serial.print(" ,CurPos 3:");
+  Serial.println(Encoder_3.getCurPos());
+  */
 }
