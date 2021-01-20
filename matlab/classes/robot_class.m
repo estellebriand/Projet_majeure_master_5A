@@ -10,7 +10,9 @@ classdef robot_class
         Orientation % data fron IMU
         Map %  matrix filled with 0 or 1 representing the map
         Waypoints % All the points to achieve goals
-        Command % Command order to send to the robot     
+        Command % Command order to send to the robot 
+        
+        Ultrason % distance front obstacle
         State % l'action en cours: "repos" "en mouvement" "arret" "zone depos" "zone prise" 
         Vision % retour de la camera
     end
@@ -21,6 +23,8 @@ classdef robot_class
             obj.Name = name;
             obj.Ip_address = ip_address;
             obj.Obstacle = obstacle_class();
+            obj.Vision = "0 0 0";
+            obj.Ultrason = 0;
             obj.State = "repos";
             obj.Orientation = rosmessage('geometry_msgs/Twist');
         end
