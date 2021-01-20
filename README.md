@@ -22,6 +22,10 @@ A la fin de la tâche, le robot retourne à sa position initiale dans la zone de
 Creer un environement de simulation et une raspberry_pi qui sera connectée au robot réel et ses capteurs afin de pouvoir plannifier son parcours, les étapes à suivre et effectuer des tâches définies.
 Une IHM permettra de connaitre l'etat actuel du robot.
 
+# Image du prototype final du projet
+
+![Image du prototype final](/autre/robot.jpeg)
+
 ## Contraintes
 
 - Pas de connection filaire ave le PC
