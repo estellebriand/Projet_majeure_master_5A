@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- node -->
+    <group ns="nodes">
+        <node name ="rapsberry_publisher" pkg="projet" type="raspberry_publisher.py" output="screen"/>
+        <node name ="imu_publisher" pkg="imu" type="imu_publisher.py" output="screen"/>
+    </group>
+
+</launch>
