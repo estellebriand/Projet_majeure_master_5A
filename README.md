@@ -141,5 +141,5 @@ Suivre les [wikis](https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_
 - How to use SLAM with a RPLidar on RaspberryPi 3B using ROS 
 
 ### Exemple de planning type
-![Image planning prévu](https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/blob/master/autre/issuesBoard.png)
+![Image planning prévu](/autre/issuesBoard.png)
 
