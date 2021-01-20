@@ -1,0 +1,8 @@
+prefix=/home/student/Bureau/CAP_HIL_2/install
+
+Name: HIL_moveit_simplified_OK
+Description: Description of HIL_moveit_simplified_OK
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

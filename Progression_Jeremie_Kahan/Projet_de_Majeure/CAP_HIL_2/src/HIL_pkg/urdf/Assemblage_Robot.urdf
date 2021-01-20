@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<robot name="Robot" xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
+  
+  <material name="red">
+    <color rgba="0 0 0.8 0.3"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="1 0 0 1"/>
+  </material>  
+  
+
+
+  <link name="robot/chassis">
+    <visual>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/chassis.STL" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="robot/bras">
+    <visual>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/bras.STL" scale="1 1 1"/>  
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="robot/pince">
+    <visual>
+      <geometry>
+	<mesh filename="package://HIL_pkg/meshes/pince.STL" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+
+
+
+  <joint name="chassis_bras" type="revolute">
+    <origin rpy="0 0 0" xyz="0.033 0.03 0.11"/>
+    <parent link="robot/chassis"/>
+    <child link="robot/bras"/>
+    <limit effort="30" velocity="1.0" lower="-1.57" upper="1.57" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <joint name="bras_pince" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.01 0.0275 0.16"/>
+    <parent link="robot/bras"/>
+    <child link="robot/pince"/>
+    <limit effort="30" velocity="1.0" lower="-1.57" upper="1.57" />
+    <axis xyz="1 0 0" />
+  </joint>
+</robot>
