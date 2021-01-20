@@ -52,7 +52,7 @@ Une IHM permettra de connaitre l'etat actuel du robot.
     3. [x] Implémentation capteur Ultrason et détection de distance
     4. [x] Implémentation IMU permettant de connaitre le Pitch/Yaw/Roll du robot
     5. [X] Optimisation de la centrale inertielle (valeur plus fiable et correction erreur)
-    6. [ ] Assemblage des différents capteurs entre eux pour la navigation globale du robot
+    6. [X] Assemblage des différents capteurs entre eux pour la navigation globale du robot
     7. [ ] Evitement d'obstacle autonome
 
 4. [ ] Vision du robot
@@ -74,7 +74,10 @@ Une IHM permettra de connaitre l'etat actuel du robot.
 - Vision (sur rapsberry pi)
     - reconnaissance cannettes
     - reconnaissance couleur
-- Capteurs : Lidar & IMU
+- Capteurs :
+    - RPLidar (SLAMTEC)
+    - MPU9250
+    - HC-SR04 ultrasonic sensor 
 
 # Représentation des noeuds
 > En cours de construction
@@ -120,38 +123,23 @@ sequenceDiagram
 - Raspberry pi 3 B
     - ubuntu 18.04
     - ROS
+    - rosserial
+    - python-smbus
 - Matlab 2020b
     - Robotics System Toolbox
     - ROS Toolbox
     - Simulink
     - Aerospace Toolbox
-- rplidar A2 
 
 # Mise en oeuvre
 Suivre les [wikis](https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/wikis/home) (section wiki de gitlab) dans l'ordre suivant:
 - Flasher une carte SD pour rapsberry pi 3B
 - Etablir la connection ssh raspberry pi - ordinateur windows
-- How to use SLAM with a RPLidar on RaspberryPi 3B+ using ROS
+- How to implement a HC SR04 ultrasonic sensor on a RaspberryPi using ROS 
+- How to implement a MPU9250 on a RaspberryPi 
+- How to implement a RPLidar on RaspberryPi 3B using ROS 
+- How to use SLAM with a RPLidar on RaspberryPi 3B using ROS 
 
 ### Exemple de planning type
-![Image planning prévu](https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/raw/master/autre/Planning-Pr%C3%A9vu.PNG)
+![Image planning prévu](https://gitlab.com/20-21_5ETI_PRJ/Sujet_5__Simulated_robotic_scenario/s5_g7_briand_guy_kahan_martinez/-/blob/master/autre/issuesBoard.png)
 
-## Rendu par séances
-Séance 1 du Lundi 04 Janvier 2021 matin :
-- Jérémie : documentation et tests IHM Matlab
-- Nicolas : Recherche documentation/codes capteurs IR/US + se replonger dans les codes servomoteur dynamixel AX12 du projet proto
-- Paul : Documentation et entrainement 
-- Estelle : Installation ubuntu mate + ROS sur raspberry, verifier le bon fonctionnement --> difficultés rencontrées avec la version 20, essai avec rasperry pi OS (debian)
-
-Séance 2 du Lundi 04 Janvier 2021 après-midi :
-- Jérémie : documentation liens Simulink-IHM Matlab et généralités sur les Digital Twins, découverte des toolboxes associées
-- Estelle : Installation & tests ubuntu-mate-18.04.2-beta1-desktop-armhf+raspi-ext4.img 
-
-Séance 3 du Mardi 05 Janvier 2021 matin :
-- Jérémie : Mise au point objectifs du projet, matériel et documentation Toolboxes Matlab
-- Paul : Debut entrainement à la reconnaissance d'objet, canette/couleur & test materiel
-- Estelle: test du matériel et flash des cartes SD des autres raspberry. Deux raspberry (pi3 et pi4) operationnelles.
-carte SD de 16G / 64G / 128G prêtes + documentation
-
-Séance 5 du Lundi 11 Janvier 2021 matin :
-- Paul : Detection d'objet avec l'internal software du pixy2. Voir pour l'utlisation des coordonnées des box et installation des dependances pour rasberry. https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:hooking_up_pixy_to_a_raspberry_pi
