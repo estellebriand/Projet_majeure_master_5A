@@ -1,0 +1,8 @@
+<launch>
+    <!-- node -->
+    <group ns="nodes">
+        <node name ="ultrason" pkg="projet" type="ultrason_publisher.py"/>
+        <node name ="pub" pkg="projet" type="raspberry_publisher.py"/>
+        <node name="demo"  pkg="projet" type="demo.py" output="screen"/>
+    </group>
+</launch>

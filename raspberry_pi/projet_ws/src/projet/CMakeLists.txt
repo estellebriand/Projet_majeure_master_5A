@@ -62,6 +62,7 @@ add_service_files(
    AddTwoInts.srv
    localGoal.srv
    Path.srv
+   Obstacle.srv
  )
 
 ## Generate actions in the 'action' folder
