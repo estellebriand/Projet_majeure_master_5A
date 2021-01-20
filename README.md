@@ -45,9 +45,9 @@ Une IHM permettra de connaitre l'etat actuel du robot.
 
 2. [ ] ROS Matlab
     1. [x] Detection obstacles + emplacement selon les positions: (devant/derriere/gauche/droite)(utilisant le lidar)
-    2. [x] hector_slam
-    3. [ ] Mapping ?
-    4. [ ] Algorithme du plus court chemin
+    2. [ ] hector_slam
+    3. [ ] Mapping
+    4. [X] Algorithme du plus court chemin
     5. [x] Ordre de déplacement 
     6. [x] Recuperer information IMU
 
@@ -58,7 +58,7 @@ Une IHM permettra de connaitre l'etat actuel du robot.
     4. [x] Implémentation IMU permettant de connaitre le Pitch/Yaw/Roll du robot
     5. [X] Optimisation de la centrale inertielle (valeur plus fiable et correction erreur)
     6. [X] Assemblage des différents capteurs entre eux pour la navigation globale du robot
-    7. [ ] Evitement d'obstacle autonome
+    7. [ ] Evitement d'obstacle autonome (local planner)
 
 4. [x] Vision du robot
     1. [x] Detection d'objet "cannette"
