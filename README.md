@@ -24,7 +24,8 @@ Une IHM permettra de connaitre l'etat actuel du robot.
 
 # Image du prototype final du projet
 
-![Image du prototype final](/autre/robot.jpeg)
+<img src="/autre/robot.jpeg" height="500"/>
+
 
 ## Contraintes
 
