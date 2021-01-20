@@ -14,6 +14,7 @@
 
 #include <ros.h>
 #include <std_msgs/String.h>
+#include <std_msgs/Int32.h>
 #include <std_msgs/Bool.h>
 #include <MeMegaPi.h>
 
@@ -63,7 +64,8 @@ void isr_process_encoder3(void)
 ros::NodeHandle  nh;
 
 std_msgs::Bool start_msg;
-std_msgs::String state_msg;
+std_msgs::Int32 state_msg;
+char cmd;
 
 ros::Publisher starter("arduino/start", &start_msg);
 ros::Publisher state("arduino/state", &state_msg);
@@ -77,14 +79,14 @@ void both_motor(int speed){
 
 void turn_right(void){
   //control motor: turn right
-  Encoder_1.runSpeed(0);
+  Encoder_1.runSpeed(-100);
   Encoder_2.runSpeed(-200);
 }
 
 void turn_left(void){
   //control motor: turn left
   Encoder_1.runSpeed(200);
-  Encoder_2.runSpeed(0);
+  Encoder_2.runSpeed(100);
 }
 
 void arm_up(void){
@@ -102,19 +104,102 @@ void close_claw(void){
 void open_claw(void){
   Motor_4.run(50);
 }
-void command_callback(const std_msgs::String& data){
-  state_msg.data = data.data;
-  state.publish(&state_msg);
-  if(data.data == "Stop"){
-    both_motor(0);
-  }
-   else if("Forward"){
-    both_motor(50);
-    }
 
+void process(){
+  switch(cmd)
+    {
+      case '0': //stop
+      both_motor(0);
+      Encoder_3.runSpeed(0);
+      Motor_4.stop(); 
+      break;
+      case '1':
+      both_motor(100); //forward
+      break;
+      case '2':
+      turn_left(); //forward
+      break;
+      case '3':
+      turn_right(); //forward
+      break;
+      case '4': //bras haut pince ouverte
+      arm_up();
+      delay(6000);
+      open_claw();
+      delay(6000);
+      Motor_4.stop();
+      break;
+      case '5': //bras haut pince fermee
+      arm_up();
+      delay(6000);
+      close_claw();
+      delay(6000);
+      Motor_4.stop();
+      break;
+      case '6': //bras bas pince ouvert
+      arm_down();
+      delay(6000);
+      open_claw();
+      delay(6000);
+      Motor_4.stop();
+      break;
+      case '7': //bras bas pince fermee
+      arm_down();
+      delay(6000);
+      open_claw();
+      delay(6000);
+      Motor_4.stop();
+      break;
+      
+      default:
+      break;
+    }
 }
 
-ros::Subscriber<std_msgs::String> command_sub("/command", command_callback);
+void command_callback(const std_msgs::Int32& msg)
+{
+
+  if(msg.data == 0){
+    cmd = '0';
+  }
+ 
+  if(msg.data ==1){
+    cmd= '1';
+    }
+    
+  if(msg.data ==2){
+    cmd= '2';
+    }
+  if(msg.data ==3){
+    cmd= '3';
+    }
+  if(msg.data ==4){
+    cmd= '4';
+    }
+  if(msg.data ==5){
+    cmd= '5';
+    }
+  if(msg.data ==6){
+    cmd= '6';
+    }
+  if(msg.data ==7){
+    cmd= '7';
+    }
+
+  state_msg.data = msg.data; 
+  state.publish(&state_msg);
+}
+
+void obstacle_callback(const std_msgs::Bool& msg){
+  if(msg.data){
+    state_msg.data = 0;
+    state.publish(&state_msg);
+    cmd = '0';
+  }
+  
+}
+ros::Subscriber<std_msgs::Int32> command_sub("/command", &command_callback);
+ros::Subscriber<std_msgs::Bool> obstacle_sub("/obstacle", &obstacle_callback);
 
 
 void setup()
@@ -123,11 +208,12 @@ void setup()
   nh.initNode();
   nh.advertise(state);
   nh.subscribe(command_sub);
+  nh.subscribe(obstacle_sub);
   
   attachInterrupt(Encoder_1.getIntNum(), isr_process_encoder1, RISING);
   attachInterrupt(Encoder_2.getIntNum(), isr_process_encoder2, RISING);
   attachInterrupt(Encoder_3.getIntNum(), isr_process_encoder3, RISING);
-  Serial.begin(115200);
+  //Serial.begin(115200);
   
   //Set PWM 8KHz
   TCCR1A = _BV(WGM10);
@@ -155,9 +241,7 @@ void setup()
 
 void loop()
 {
-  //nh.spinOnce();
-  //delay(1000);
-
+  /*
   if(Serial.available())
   {
     char a = Serial.read();
@@ -169,7 +253,8 @@ void loop()
       Motor_4.stop();
       break;
       case '1':
-      both_motor(50);
+      //both_motor(50);
+      command(state_msg);
       break;
       case '2':
       turn_right();
@@ -197,16 +282,20 @@ void loop()
       default:
       break;
     }
-  }
+  }*/
+  process();
   Encoder_1.loop();
   Encoder_2.loop();
   Encoder_3.loop();
+ 
+  nh.spinOnce();
+  delay(200);
   /*
   Serial.print("Spped 1:");
   Serial.print(Encoder_1.getCurrentSpeed());
   Serial.print(" ,Spped 2:");
   Serial.println(Encoder_2.getCurrentSpeed());
-  
+ 
   Serial.print(" ,CurPos 3:");
   Serial.println(Encoder_3.getCurPos());
   */
