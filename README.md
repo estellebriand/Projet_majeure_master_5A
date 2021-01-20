@@ -36,20 +36,20 @@ Une IHM permettra de connaitre l'etat actuel du robot.
 
 # Listes des fonctionnalités :
 
-1. [ ] IHM
+1. [x] IHM
     1. [x] Affichage de la map
     2. [x] Creation de la map
     3. [x] Affichage information de l'etat du robot (orientation, vitesse, map)
     4. [x] Affichage liste des commandes de creation de la carte
-    5. [ ] Affichage position obstacle
+    5. [x] Affichage position obstacle
 
 2. [ ] ROS Matlab
     1. [x] Detection obstacles + emplacement selon les positions: (devant/derriere/gauche/droite)(utilisant le lidar)
     2. [x] hector_slam
     3. [ ] Mapping ?
     4. [ ] Algorithme du plus court chemin
-    5. [ ] Ordre de déplacement 
-    6. [ ] Recuperer information IMU
+    5. [x] Ordre de déplacement 
+    6. [x] Recuperer information IMU
 
 3. [ ] Navigation
     1. [x] Implémentation Lidar et mapping (type RPLidar)
@@ -85,20 +85,26 @@ Une IHM permettra de connaitre l'etat actuel du robot.
     - HC-SR04 ultrasonic sensor 
 
 # Représentation des noeuds
-> En cours de construction
+> Noeuds actuels
 ```mermaid
 graph LR
 
-    T1[Odometry source] -- /odom --> Node1((publisher))
-    T2[IMU source] -- /imu --> Node1((publisher))
-    T3[Laser source] -- /scan --> Node1((publisher))
+    S1[Odometry source] -- /odom --> Node_pub((publisher.py))
+    S2[Laser source] -- /scan --> Node_pub((publisher.py))
+    S3[IMU source] -- /imu --> Node_imu((imu_publisher.py))  
+    S4[Ultrason source] -- /ultrason -->Node_ultrason((ultrason_publisher.py))
+    
+    Node_ultrason -- /obstacle --> Node_demo((demo.py))
 
-    Node2 -- /move_to/waypoints --> Node_command((Command))
-    Node_command((Command)) -- /rosserial/cmd_vel --> T4[wheels motor]
-
-    Node1 -- /obstacles_spot -->Node2((Matlab_ROS))
-    Node1 -- /detect_object -->Node2((Matlab_ROS))
-    Node2 -- robot -->IHM[IHM]
+    Node_demo((demo.py)) -- /command --> T1[motors]
+    
+    Node_pub-- /obstacles_spot -->Node_matlab((Matlab_ROS))
+    Node_pub -- /detect_object -->Node_matlab
+    Node_imu -- /imu --> Node_matlab
+    Node_ultrason -- /obstacle --> Node_matlab
+    
+    
+    Node_matlab -- robot_states -->IHM[IHM]
 ```
 
 # Description de l'algo
