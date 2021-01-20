@@ -60,10 +60,10 @@ Une IHM permettra de connaitre l'etat actuel du robot.
     6. [X] Assemblage des différents capteurs entre eux pour la navigation globale du robot
     7. [ ] Evitement d'obstacle autonome
 
-4. [ ] Vision du robot
+4. [x] Vision du robot
     1. [x] Detection d'objet "cannette"
-    2. [ ] Detection de la couleur
-    3. [ ] Calcule la distance de l'objectif
+    2. [x] Detection de la couleur
+    3. [x] Calcule la distance de l'objectif
 
 ## Technologies utilisées:
 
