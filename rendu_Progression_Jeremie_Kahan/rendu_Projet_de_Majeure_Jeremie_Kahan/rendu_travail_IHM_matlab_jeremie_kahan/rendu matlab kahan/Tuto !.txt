@@ -1,0 +1,13 @@
+1) Lancer Matlab,
+2) Définir le répertoire de travail Matlab au dossier "mobile-robotics-simulation-toolbox",
+3) Ouvrir le programme "startMobileRoboticsSimulationToolbox" de ce répertoire,
+4) Run ce programme,
+5) Ouvrir le programme "MATLAB_JK_IHM" à la racine de ce Kit IHM,
+6) Run ce programme,
+7) Ouvrir "APP_JK_HIL_IHM_v10_1" qui est l'application IHM,
+8) Run ce programme,
+9) SUR l'IHM : Créer les obstacles sur la carte,
+10) SUR l'IHM : Définir au moins 2 waypoints de part et d'autre de l'obstacle,
+11) SUR l'IHM : Définir une position de départ,
+12) Ouvrir le programme "MATLAB_JK_IHM_USE_2" à la racine de ce Kit IHM,
+13) Run ce programme (on peut utiliser très facilement les waypoints comme starts & goals)...

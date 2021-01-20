@@ -1,0 +1,8 @@
+controller_list:
+  - name: fake_HIL_group_controller
+    joints:
+      - chassis_bras
+      - bras_pince
+initial:  # Define initial robot poses.
+  - group: HIL_group
+    pose: bras_haut_pince_ouverte

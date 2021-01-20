@@ -1,0 +1,8 @@
+prefix=/home/student/Bureau/CAP_HIL_4/install
+
+Name: HIL_moveit_fonctionnel
+Description: Description of HIL_moveit_fonctionnel
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

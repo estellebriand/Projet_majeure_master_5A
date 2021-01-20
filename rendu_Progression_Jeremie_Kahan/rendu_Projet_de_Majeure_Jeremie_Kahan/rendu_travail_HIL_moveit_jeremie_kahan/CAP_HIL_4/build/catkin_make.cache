@@ -1,0 +1,2 @@
+HIL_moveit_fonctionnel:HIL_pkg
+-DCATKIN_DEVEL_PREFIX=/home/student/Bureau/CAP_HIL_4/devel -DCMAKE_INSTALL_PREFIX=/home/student/Bureau/CAP_HIL_4/install -G Unix Makefiles
