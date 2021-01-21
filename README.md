@@ -112,7 +112,7 @@ graph LR
 ```
 
 # Description de l'algo
-> En cours de construction
+
 ```mermaid
 sequenceDiagram
     participant Robot
