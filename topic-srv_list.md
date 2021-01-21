@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Robot 
 
 Robot est un objet décrit comme suit:
@@ -43,10 +43,10 @@ end
 # Choix des topics et services spécifique au projet
 
 - /map => sous forme de matrice de flot
-=======
+
 # Choix des topics et services spécifique au projet
 
-- /map => sous forme de matrice de flot
+
 ```
 0 stop
 1 forward
@@ -57,8 +57,7 @@ end
 6 bras_bas_pince_ouverte
 7 bras_bas_pince_fermee
 ```
->>>>>>> dev_briand
-
+- /map => sous forme de matrice de flot
 ```
 float[] map_matrice
 --
