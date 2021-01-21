@@ -129,9 +129,9 @@ sequenceDiagram
 
 # Vidéos de présentation
 
-[Lien vers la vidéo pitch youtube](url)
+[Lien vers la vidéo pitch youtube](https://youtu.be/T0i_Y2brrEU)
 
-[Lien vers la vidéo tutoriel youtube](url)
+[Lien vers la vidéo tutoriel youtube](https://youtu.be/lP1sIUkGzPA)
 
 # Liste des dépendances et pré-requis
 
