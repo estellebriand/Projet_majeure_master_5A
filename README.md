@@ -89,18 +89,22 @@ Une IHM permettra de connaitre l'etat actuel du robot.
 ```mermaid
 graph LR
 
-    S1[Odometry source] -- /odom --> Node_pub((publisher.py))
-    S2[Laser source] -- /scan --> Node_pub((publisher.py))
-    S3[IMU source] -- /imu --> Node_imu((imu_publisher.py))  
-    S4[Ultrason source] -- /ultrason -->Node_ultrason((ultrason_publisher.py))
+    S1[Odometry source] -- /odom --> Node_pub((raspberry_pub.py))
+    S2[Laser source] -- /scan --> Node_pub((raspberry_pub.py))
+    S3[IMU source] -- /imu --> Node_imu((imu_pub.py)) 
+    S4[Camera] -- /vision -->Node_vision((vision_pub.py)) 
+    S5[Ultrason source] -- /ultrason -->Node_ultrason((ultrason_pub.py))
+    
     
     Node_ultrason -- /obstacle --> Node_demo((demo.py))
 
+    Node_matlab -- /command --> T1[motors]
     Node_demo((demo.py)) -- /command --> T1[motors]
     
     Node_pub-- /obstacles_spot -->Node_matlab((Matlab_ROS))
     Node_pub -- /detect_object -->Node_matlab
     Node_imu -- /imu --> Node_matlab
+    Node_vision -- /vision --> Node_matlab
     Node_ultrason -- /obstacle --> Node_matlab
     
     
