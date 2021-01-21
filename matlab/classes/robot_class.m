@@ -4,22 +4,29 @@ classdef robot_class
     
     properties
         Name % Name of the robot
+        Ip_address % the ipdress pf our robot
         Obstacle %  Give booleans if obstacles place on the front/back/left/right
         Scan % raw data from the LIDAR
-        
+        Orientation % data fron IMU
         Map %  matrix filled with 0 or 1 representing the map
         Waypoints % All the points to achieve goals
-        Command % Command order to send to the robot
+        Command % Command order to send to the robot 
         
-        Action % l'action en cours
-        
+        Ultrason % distance front obstacle
+        State % l'action en cours: "repos" "en mouvement" "arret" "zone depos" "zone prise" 
+        Vision % retour de la camera
     end
     
     methods
-        function obj = robot_class(name)
+        function obj = robot_class(name,ip_address)
             %ROBOT Construct an instance of this class
             obj.Name = name;
+            obj.Ip_address = ip_address;
             obj.Obstacle = obstacle_class();
+            obj.Vision = "0 0 0";
+            obj.Ultrason = 0;
+            obj.State = "repos";
+            obj.Orientation = rosmessage('geometry_msgs/Twist');
         end
 
         function bool = is_obstacle(obj,position)

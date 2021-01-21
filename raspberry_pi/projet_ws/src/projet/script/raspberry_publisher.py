@@ -43,29 +43,29 @@ class raspberry_publisher():
        
         for p in range(0, len(ranges)):
             # Front position
-            if (p >= 0 and p < 45) or (p > 315 and p<=360): # 315<p<360 or 0<p<45
+            if (p >= 0 and p < 70) or (p > 290 and p<=360): # 315<p<360 or 0<p<45
               #remove infinite value
-              if ranges[p] != np.inf and ranges[p] < 0.2:
+              if ranges[p] != np.inf and ranges[p] < 0.20:
                     # if we get value <0.2 we have an obstacle
                     obstacles["devant"] = True
             
             # right position
-            if (p < 315 and p>=225): # 225<p<315
+            if (p < 290 and p>=225): # 225<p<315
                 #remove infinite value
-                if ranges[p] != np.inf and ranges[p] < 0.2:
+                if ranges[p] != np.inf and ranges[p] < 0.30:
                     # if we get value <0.2 we have an obstacle
                     obstacles["droite"] = True
    
             # Back position
             if (p < 225 and p>=135): # 135<p<225
                 #remove infinite value
-                if ranges[p] != np.inf and ranges[p] < 0.2:
+                if ranges[p] != np.inf and ranges[p] < 0.30:
                     # if we get value <0.2 we have an obstacle
                     obstacles["derriere"] = True
             # Left position
-            if (p < 135 and p>=45):
+            if (p < 135 and p>=70):
                 #remove infinite value
-                if ranges[p] != np.inf and ranges[p] < 0.2:
+                if ranges[p] != np.inf and ranges[p] < 0.30:
                     # if we get value <0.1 we have an obstacle
                     obstacles["gauche"] = True
 

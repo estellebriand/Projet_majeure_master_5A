@@ -1,0 +1,10 @@
+1) Lancer Matlab,
+2) Définir le répertoire de travail Matlab au dossier "mobile-robotics-simulation-toolbox",
+3) Ouvrir le programme "startMobileRoboticsSimulationToolbox" de ce répertoire,
+4) Run ce programme,
+6) Ouvrir le programme "MATLAB_JK_IHM" à la racine de ce Kit IHM,
+7) Définir tout en bas de ce programme la variable à envoyer,
+5) Ouvrir "APP_JK_HIL_IHM_v10_0_estelle_variable_test" qui est l'application IHM,
+9) Pour voir comment ça marche, va dans l'onglet "Code View" de l'outil de création de l'application que tu viens de lancer et descends un tout petit peu, c'est la première fonction qui apparaît,
+10) Run ce programme.
+11) L'IHM se présente avec en bas à gauche ta variable.
